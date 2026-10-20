@@ -1,0 +1,123 @@
+# Ses Ver · F0-2 iOS spike'ları (XcodeGen)
+# Kurulum: brew install xcodegen && cd Spikes && xcodegen   →  SesVerSpikes.xcodeproj
+# İmzalama: aşağıdaki DEVELOPMENT_TEAM ve SPIKE_BUNDLE_PREFIX değerlerini doldurun (README §İmzalama).
+name: SesVerSpikes
+options:
+  bundleIdPrefix: com.example.sesver
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "27.1"
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""                       # ← 10 haneli Team ID
+    SPIKE_BUNDLE_PREFIX: com.example.sesver.spike   # ← kendi ters-DNS önekiniz
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    TARGETED_DEVICE_FAMILY: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    GENERATE_INFOPLIST_FILE: NO
+    DEVELOPMENT_LANGUAGE: tr
+    CURRENT_PROJECT_VERSION: "1"
+    MARKETING_VERSION: "0.1"
+
+targetTemplates:
+  SpikeApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: Shared
+        excludes:
+          - "Intents/**"
+          - "Sounds/**"
+      - path: ${target_dir}
+        excludes:
+          - "Info.plist"
+          - "*.entitlements"
+    settings:
+      base:
+        INFOPLIST_FILE: ${target_dir}/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: $(SPIKE_BUNDLE_PREFIX).${bundle_suffix}
+
+targets:
+  # (a) Eylem Düğmesi → AudioPlaybackIntent
+  SpikeA_ActionButtonIntent:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeA_ActionButtonIntent, bundle_suffix: a }
+    sources:
+      - Shared/Intents/BeaconIntents.swift
+
+  # (b) Kilit ekranı / Kontrol Merkezi kontrolü (+ uzantı)
+  SpikeB_LockScreenControl:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeB_LockScreenControl, bundle_suffix: b }
+    sources:
+      - Shared/Intents/BeaconIntents.swift
+    dependencies:
+      - target: SpikeB_LockScreenControlWidgets
+        embed: true
+
+  SpikeB_LockScreenControlWidgets:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "18.0"
+    sources:
+      - Shared/Intents/BeaconIntents.swift
+      - path: SpikeB_LockScreenControlWidgets
+        excludes: ["Info.plist"]
+    settings:
+      base:
+        INFOPLIST_FILE: SpikeB_LockScreenControlWidgets/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: $(SPIKE_BUNDLE_PREFIX).b.controls
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: WIDGET_EXTENSION
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+
+  # (c) 72 saat arka plan ses + mikrofon
+  SpikeC_BackgroundAudio72h:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeC_BackgroundAudio72h, bundle_suffix: c }
+
+  # (d) 64 yerel bildirim zinciri + Library/Sounds
+  SpikeD_NotificationChain:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeD_NotificationChain, bundle_suffix: d }
+    sources:
+      - path: Shared/Sounds
+        buildPhase: resources
+    settings:
+      base:
+        # Critical Alerts onayı (F0-8) gelince: SpikeD_NotificationChain/SpikeD-Critical.entitlements
+        CODE_SIGN_ENTITLEMENTS: SpikeD_NotificationChain/SpikeD.entitlements
+
+  # (e) Arka planda BLE reklamı + tarayıcı
+  SpikeE_BLEAdvertising:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeE_BLEAdvertising, bundle_suffix: e }
+
+  # (f) outputVolume
+  SpikeF_OutputVolume:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeF_OutputVolume, bundle_suffix: f }
+
+  # (g) Gece Nöbeti siyah ekran + Core Motion güç
+  SpikeG_NightWatchPower:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeG_NightWatchPower, bundle_suffix: g }
+
+  # (h) Siri internetsiz
+  SpikeH_SiriOffline:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeH_SiriOffline, bundle_suffix: h }
+    sources:
+      - Shared/Intents/BeaconIntents.swift
+
+  # (i) AlarmKit (iOS 26+)
+  SpikeI_AlarmKit:
+    templates: [SpikeApp]
+    templateAttributes: { target_dir: SpikeI_AlarmKit, bundle_suffix: i }
+    deploymentTarget: "26.0"
+    sources:
+      - path: Shared/Sounds
+        buildPhase: resources

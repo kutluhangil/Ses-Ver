@@ -1,0 +1,136 @@
+{
+ "seed": 61004,
+ "hours_per_case": 3.0,
+ "results": [
+  {
+   "noise": "construction",
+   "variant": "v0",
+   "hours": 3.0,
+   "kinds": {
+    "crc_fail": 752,
+    "beacon": 2,
+    "response": 2
+   },
+   "pre_crc_per_hour": 252.0,
+   "pre_crc_ci95": [
+    234.3544051473425,
+    270.62218142188186
+   ],
+   "valid_false_frames": 4,
+   "valid_per_hour": 1.3333333333333333,
+   "valid_ci95": [
+    0.3632884578754416,
+    3.413862891801232
+   ],
+   "expected_valid_per_hour_from_crc": 0.984375,
+   "max_metric_c": 3119.3716775196303
+  },
+  {
+   "noise": "construction",
+   "variant": "v0-L",
+   "hours": 3.0,
+   "kinds": {
+    "crc_fail": 761,
+    "beacon": 2
+   },
+   "pre_crc_per_hour": 254.33333333333334,
+   "pre_crc_ci95": [
+    236.60475706707072,
+    273.03844213113126
+   ],
+   "valid_false_frames": 2,
+   "valid_per_hour": 0.6666666666666666,
+   "valid_ci95": [
+    0.08073642618132165,
+    2.408229222574653
+   ],
+   "expected_valid_per_hour_from_crc": 0.9934895833333334,
+   "max_metric_c": 373.3794737652388
+  },
+  {
+   "noise": "pink",
+   "variant": "v0",
+   "hours": 3.0,
+   "kinds": {
+    "crc_fail": 42
+   },
+   "pre_crc_per_hour": 14.0,
+   "pre_crc_ci95": [
+    10.089968577492565,
+    18.92393292616355
+   ],
+   "valid_false_frames": 0,
+   "valid_per_hour": 0.0,
+   "valid_ci95": [
+    0.0,
+    1.2296264847046452
+   ],
+   "expected_valid_per_hour_from_crc": 0.0546875,
+   "max_metric_c": 26.502423908018905
+  },
+  {
+   "noise": "pink",
+   "variant": "v0-L",
+   "hours": 3.0,
+   "kinds": {
+    "crc_fail": 31
+   },
+   "pre_crc_per_hour": 10.333333333333334,
+   "pre_crc_ci95": [
+    7.020998659713951,
+    14.66734183441625
+   ],
+   "valid_false_frames": 0,
+   "valid_per_hour": 0.0,
+   "valid_ci95": [
+    0.0,
+    1.2296264847046452
+   ],
+   "expected_valid_per_hour_from_crc": 0.040364583333333336,
+   "max_metric_c": 28.75530397252314
+  },
+  {
+   "noise": "white",
+   "variant": "v0",
+   "hours": 3.0,
+   "kinds": {
+    "crc_fail": 37
+   },
+   "pre_crc_per_hour": 12.333333333333334,
+   "pre_crc_ci95": [
+    8.683804855702009,
+    16.999875380643612
+   ],
+   "valid_false_frames": 0,
+   "valid_per_hour": 0.0,
+   "valid_ci95": [
+    0.0,
+    1.2296264847046452
+   ],
+   "expected_valid_per_hour_from_crc": 0.048177083333333336,
+   "max_metric_c": 27.39869698726245
+  },
+  {
+   "noise": "white",
+   "variant": "v0-L",
+   "hours": 3.0,
+   "kinds": {
+    "crc_fail": 31
+   },
+   "pre_crc_per_hour": 10.333333333333334,
+   "pre_crc_ci95": [
+    7.020998659713951,
+    14.66734183441625
+   ],
+   "valid_false_frames": 0,
+   "valid_per_hour": 0.0,
+   "valid_ci95": [
+    0.0,
+    1.2296264847046452
+   ],
+   "expected_valid_per_hour_from_crc": 0.040364583333333336,
+   "max_metric_c": 27.039861948839125
+  }
+ ],
+ "wall_s": 417.9
+}

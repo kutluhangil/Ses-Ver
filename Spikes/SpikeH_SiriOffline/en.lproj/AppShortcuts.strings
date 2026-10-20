@@ -1,0 +1,4 @@
+/* Spike H: English Siri phrases (development language is tr). */
+"${applicationName} başlat" = "Start ${applicationName}";
+"${applicationName} ile sinyal ver" = "Signal with ${applicationName}";
+"${applicationName} durdur" = "Stop ${applicationName}";

@@ -1,0 +1,11 @@
+# Ses Ver: ajan kuralları
+- Plan: BLUEPRINT.md. Kararlar: docs/adr/. Sözleşmeler: docs/contracts/.
+- Dizin sahipliği BLUEPRINT §5.1; alanın dışına yazma, Orkestratör'e talep dön.
+- Swift 6 strict concurrency, SwiftLint temiz, Swift Testing.
+- Platform varsayımı = gerçek cihaz spike'ı ile kanıt. Simülatör kanıt değildir.
+- Kullanıcı metinleri Localizable.xcstrings; yasaklı ifadeler: "hayat kurtarır", "garanti", "kesin bulunursunuz".
+- Gerçek zamanlı ses iş parçacığında bellek ayırma, kilit, log yok.
+- Entitlement başvurusu, App Store gönderimi, dış kuruma e-posta: önce insan onayı.
+- F0 kapısı geçilmeden uygulama arayüzü yazılmaz (BLUEPRINT §0.5).
+- Python araştırma ortamı: `python3 -m venv research/.venv && research/.venv/bin/pip install -r research/requirements.txt`.
+- Tasarım referansı: docs/design/DESIGN_PROMPT.md ve docs/design/ses-ver-ios-ekranlari.pdf.

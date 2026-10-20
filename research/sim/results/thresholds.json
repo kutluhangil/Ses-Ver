@@ -1,0 +1,34 @@
+{
+  "v0-L/n_up=1": {
+    "eta_c": 16.63,
+    "target_per_hour": 10.0,
+    "hours": 2.0,
+    "n_candidates_low": 7491,
+    "low_eta": 9.0,
+    "rate_at_low_eta_per_hour": 3745.5
+  },
+  "v0-L/n_up=3": {
+    "eta_c": 22.3,
+    "target_per_hour": 10.0,
+    "hours": 2.0,
+    "n_candidates_low": 5843,
+    "low_eta": 12.0,
+    "rate_at_low_eta_per_hour": 2921.5
+  },
+  "v0/n_up=1": {
+    "eta_c": 17.01,
+    "target_per_hour": 10.0,
+    "hours": 2.0,
+    "n_candidates_low": 8391,
+    "low_eta": 9.0,
+    "rate_at_low_eta_per_hour": 4195.5
+  },
+  "v0/n_up=3": {
+    "eta_c": 22.25,
+    "target_per_hour": 10.0,
+    "hours": 2.0,
+    "n_candidates_low": 6290,
+    "low_eta": 12.0,
+    "rate_at_low_eta_per_hour": 3145.0
+  }
+}

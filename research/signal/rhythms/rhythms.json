@@ -1,0 +1,49 @@
+{
+  "seed": 6006,
+  "fields": {
+    "id": 2034,
+    "people": 1,
+    "injured": 1,
+    "life_age": 2,
+    "battery": 6,
+    "mode": 0
+  },
+  "W_hex": "0x7F26584F",
+  "nominal_interval_s": 10.0,
+  "format": "48 kHz, 16 bit PCM, mono, A = -1 dBFS",
+  "files": {
+    "ritim_A_v0.wav": {
+      "frame_ms": 1232.0,
+      "on_ms": 992.0,
+      "starts_s": [
+        1.0,
+        11.617,
+        23.069
+      ],
+      "duty_nominal": 0.0992,
+      "duty_worst_8_5s": 0.1167
+    },
+    "ritim_B_v0L.wav": {
+      "frame_ms": 1232.0,
+      "on_ms": 992.0,
+      "starts_s": [
+        1.0,
+        11.581,
+        20.416
+      ],
+      "duty_nominal": 0.0992,
+      "duty_worst_8_5s": 0.1167
+    },
+    "ritim_C_alt2uzun.wav": {
+      "frame_ms": 1192.0,
+      "on_ms": 992.0,
+      "starts_s": [
+        1.0,
+        11.209,
+        20.066
+      ],
+      "duty_nominal": 0.0992,
+      "duty_worst_8_5s": 0.1167
+    }
+  }
+}

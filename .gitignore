@@ -1,0 +1,15 @@
+.DS_Store
+# Python
+research/.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+.build/
+# Saha ham kayıtları (büyük; ayrı depolama)
+research/field_analysis/raw/

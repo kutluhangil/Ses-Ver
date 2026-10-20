@@ -1,0 +1,72 @@
+{
+ "machine": "arm64",
+ "python": "3.15.0",
+ "duration_s": 120,
+ "runs": [
+  {
+   "variant": "v0",
+   "frames_every_10s": false,
+   "block": 1024,
+   "events": 1,
+   "ms_per_audio_s": 8.417424999999993,
+   "rtf": 118.80117731966733
+  },
+  {
+   "variant": "v0",
+   "frames_every_10s": false,
+   "block": 4800,
+   "events": 1,
+   "ms_per_audio_s": 3.191241666666659,
+   "rtf": 313.3576533689872
+  },
+  {
+   "variant": "v0",
+   "frames_every_10s": true,
+   "block": 1024,
+   "events": 14,
+   "ms_per_audio_s": 3.472408333333332,
+   "rtf": 287.9845640273682
+  },
+  {
+   "variant": "v0",
+   "frames_every_10s": true,
+   "block": 4800,
+   "events": 14,
+   "ms_per_audio_s": 4.917191666666657,
+   "rtf": 203.36811493010106
+  },
+  {
+   "variant": "v0-L",
+   "frames_every_10s": false,
+   "block": 1024,
+   "events": 0,
+   "ms_per_audio_s": 3.6251249999999993,
+   "rtf": 275.85255680838594
+  },
+  {
+   "variant": "v0-L",
+   "frames_every_10s": false,
+   "block": 4800,
+   "events": 0,
+   "ms_per_audio_s": 3.592766666666665,
+   "rtf": 278.33702903055223
+  },
+  {
+   "variant": "v0-L",
+   "frames_every_10s": true,
+   "block": 1024,
+   "events": 12,
+   "ms_per_audio_s": 5.576883333333319,
+   "rtf": 179.3116226805299
+  },
+  {
+   "variant": "v0-L",
+   "frames_every_10s": true,
+   "block": 4800,
+   "events": 12,
+   "ms_per_audio_s": 5.288550000000006,
+   "rtf": 189.0877461686093
+  }
+ ],
+ "cpu": "Apple M6"
+}

@@ -1,0 +1,450 @@
+{
+  "spec": "SignalSpec v0",
+  "contract": "docs/contracts/signal-v0.md",
+  "generator": "research/signal/make_vectors.py",
+  "random_seed": 20261020,
+  "count": 55,
+  "layout_samples": {
+    "U": [
+      [
+        0,
+        5760
+      ],
+      [
+        9600,
+        15360
+      ],
+      [
+        19200,
+        24960
+      ]
+    ],
+    "D": [
+      28800,
+      34560
+    ],
+    "S": [
+      [
+        34560,
+        37632
+      ],
+      [
+        37632,
+        40704
+      ],
+      [
+        40704,
+        43776
+      ],
+      [
+        43776,
+        46848
+      ],
+      [
+        46848,
+        49920
+      ],
+      [
+        49920,
+        52992
+      ],
+      [
+        52992,
+        56064
+      ],
+      [
+        56064,
+        59136
+      ]
+    ],
+    "frame_len": 59136,
+    "on_len": 47616
+  },
+  "vectors": [
+    {
+      "name": "min_all",
+      "W_hex": "0x001000B3",
+      "json": "min_all.json",
+      "f32": "min_all.f32",
+      "sha256": "6053eb34ccc54d8fc4cbc311fa4becd84f2a9d485e31d376851fd8ffabfee01c"
+    },
+    {
+      "name": "max_all",
+      "W_hex": "0xFFEFFF20",
+      "json": "max_all.json",
+      "f32": "max_all.f32",
+      "sha256": "b235eb7a5831cc25f9890d97ecd8fca7413a8b5321f326babe57ee62bbaa2daa"
+    },
+    {
+      "name": "mode_0",
+      "W_hex": "0x7F24742A",
+      "json": "mode_0.json",
+      "f32": "mode_0.f32",
+      "sha256": "492778ced10ff1680c004c734105efe8734a321488722c281b2b81e36c0e48cf"
+    },
+    {
+      "name": "mode_1",
+      "W_hex": "0x7F247505",
+      "json": "mode_1.json",
+      "f32": "mode_1.f32",
+      "sha256": "9fc118c27c92897762bab5bba21e58406bd0805cb65301000b5da3cb7de47c94"
+    },
+    {
+      "name": "mode_2",
+      "W_hex": "0x7F247674",
+      "json": "mode_2.json",
+      "f32": "mode_2.f32",
+      "sha256": "ec962c9a8a2397e650155dc537e9d7c78bb6f5450c8370944f81fa9838e2d81d"
+    },
+    {
+      "name": "mode_3",
+      "W_hex": "0x7F24775B",
+      "json": "mode_3.json",
+      "f32": "mode_3.f32",
+      "sha256": "dec1045e0e06f269609d5464bf955f3756d185248978124cf5469f07d870c6ca"
+    },
+    {
+      "name": "lifeage_00",
+      "W_hex": "0x7F22187C",
+      "json": "lifeage_00.json",
+      "f32": "lifeage_00.f32",
+      "sha256": "58f060c6ec35dbe4b85b87903e1adeba0475fa76c61745000715f62a21572ac7"
+    },
+    {
+      "name": "lifeage_01",
+      "W_hex": "0x7F22380F",
+      "json": "lifeage_01.json",
+      "f32": "lifeage_01.f32",
+      "sha256": "e4c1f262c726fa4d987823c771959bca662cbad2ade4ed056eaa776862cce370"
+    },
+    {
+      "name": "lifeage_02",
+      "W_hex": "0x7F22589A",
+      "json": "lifeage_02.json",
+      "f32": "lifeage_02.f32",
+      "sha256": "007b5488f7dd125875c99eae282792dda58c23c0aa008a87f001a2c68faec654"
+    },
+    {
+      "name": "lifeage_03",
+      "W_hex": "0x7F2278E9",
+      "json": "lifeage_03.json",
+      "f32": "lifeage_03.f32",
+      "sha256": "29e3c7878ddac69b9361a641beb7eb0266917435637c43dd8c1b9399523b5063"
+    },
+    {
+      "name": "lifeage_04",
+      "W_hex": "0x7F22989F",
+      "json": "lifeage_04.json",
+      "f32": "lifeage_04.f32",
+      "sha256": "d5b9ff0bdbda41f4d22590f2a69a8a64c80ed3ca4185aad7f36681c8ea3d24cd"
+    },
+    {
+      "name": "lifeage_05",
+      "W_hex": "0x7F22B8EC",
+      "json": "lifeage_05.json",
+      "f32": "lifeage_05.f32",
+      "sha256": "2fad767ac4265e268e5bcd5249e10ac3d6e4aadf67030c5d206962c6a757252e"
+    },
+    {
+      "name": "lifeage_06",
+      "W_hex": "0x7F22D879",
+      "json": "lifeage_06.json",
+      "f32": "lifeage_06.f32",
+      "sha256": "74e321aaa7163f6247005cf610d88986cdd0996413b6f5bfdfba5cb547d9d554"
+    },
+    {
+      "name": "lifeage_07",
+      "W_hex": "0x7F22F80A",
+      "json": "lifeage_07.json",
+      "f32": "lifeage_07.f32",
+      "sha256": "c37c54b010bec78d25ae5808a90b8f67cd5cdfaf8cfa85c233b55cb9b1e94d73"
+    },
+    {
+      "name": "lifeage_08",
+      "W_hex": "0x7F231895",
+      "json": "lifeage_08.json",
+      "f32": "lifeage_08.f32",
+      "sha256": "6e3c33ae1d72f03786ead73b6e68ca438cebb80115ba3c0c4f8b7cdd041dd77b"
+    },
+    {
+      "name": "lifeage_09",
+      "W_hex": "0x7F2338E6",
+      "json": "lifeage_09.json",
+      "f32": "lifeage_09.f32",
+      "sha256": "bb3251433f89e1a7b415aedf84064fd022711e84b7e4b6889e950d7434f4c287"
+    },
+    {
+      "name": "lifeage_10",
+      "W_hex": "0x7F235873",
+      "json": "lifeage_10.json",
+      "f32": "lifeage_10.f32",
+      "sha256": "3d071fd08703db8e1c600b2d54228898cef719c988be5c0360baef8c094742a9"
+    },
+    {
+      "name": "lifeage_11",
+      "W_hex": "0x7F237800",
+      "json": "lifeage_11.json",
+      "f32": "lifeage_11.f32",
+      "sha256": "3365a5b50b250c24c2fecd268b665d894ba8d185fe80c1f17bf688e0e5d14419"
+    },
+    {
+      "name": "lifeage_12",
+      "W_hex": "0x7F239876",
+      "json": "lifeage_12.json",
+      "f32": "lifeage_12.f32",
+      "sha256": "375d4c0725b85ee260c43d40765de56a4b779a0ffc784197b6c7d383b9fbc98e"
+    },
+    {
+      "name": "lifeage_13",
+      "W_hex": "0x7F23B805",
+      "json": "lifeage_13.json",
+      "f32": "lifeage_13.f32",
+      "sha256": "6b96427c05a9c80a6dc8581303c34ba8ee12634091eae3e47b74f8d96021040a"
+    },
+    {
+      "name": "lifeage_14",
+      "W_hex": "0x7F23D890",
+      "json": "lifeage_14.json",
+      "f32": "lifeage_14.f32",
+      "sha256": "6c35ef387c511c1d1478b9afa18b742f6d7708efd1e5233a845da69fac098801"
+    },
+    {
+      "name": "lifeage_15",
+      "W_hex": "0x7F23F8E3",
+      "json": "lifeage_15.json",
+      "f32": "lifeage_15.f32",
+      "sha256": "3f1bf5811bff81485ab46a57dce4668fbb2a0229741ee276bee45e6df66bb7e4"
+    },
+    {
+      "name": "id_7F2",
+      "W_hex": "0x7F2A581F",
+      "json": "id_7F2.json",
+      "f32": "id_7F2.f32",
+      "sha256": "17883348378be9fd2f3f65f6b581e5fe14e556dc247d2584fbd64262123b1661"
+    },
+    {
+      "name": "random_00",
+      "W_hex": "0xDA0C4F0A",
+      "json": "random_00.json",
+      "f32": "random_00.f32",
+      "sha256": "8d9e8080db8418da6836cbdcd970a5c05d3b89ef5a53377eab35a92b32888140"
+    },
+    {
+      "name": "random_01",
+      "W_hex": "0xBA256F41",
+      "json": "random_01.json",
+      "f32": "random_01.f32",
+      "sha256": "4e3897e906c448fdfdc4098c4a44ecaf48e560ec28af65ed9bc9a2c63849402c"
+    },
+    {
+      "name": "random_02",
+      "W_hex": "0x66B3DC90",
+      "json": "random_02.json",
+      "f32": "random_02.f32",
+      "sha256": "ef11e274cf3890999a18fb8fd92781aa2a86c3276a265ae43651f029ebc9e9cf"
+    },
+    {
+      "name": "random_03",
+      "W_hex": "0xD1ABE57D",
+      "json": "random_03.json",
+      "f32": "random_03.f32",
+      "sha256": "0a88a7bf19bfe76421bbe1e25052e98197aaeaf49b6187ead8be078c0dc5b034"
+    },
+    {
+      "name": "random_04",
+      "W_hex": "0xE13506FA",
+      "json": "random_04.json",
+      "f32": "random_04.f32",
+      "sha256": "54293feda252edfdce9f91c48d169617151846c51af9fae21b0818c82e9d254a"
+    },
+    {
+      "name": "random_05",
+      "W_hex": "0x9B398A30",
+      "json": "random_05.json",
+      "f32": "random_05.f32",
+      "sha256": "99a994d27fa33c90394c5a858aa78e63b6a1ca794cfff03394d025f73e4e4dff"
+    },
+    {
+      "name": "random_06",
+      "W_hex": "0x9E3B39B4",
+      "json": "random_06.json",
+      "f32": "random_06.f32",
+      "sha256": "1edc6d2f31a2058f39d02b8fa04d6ce9cb9a3890e406acadbce7be3c82225652"
+    },
+    {
+      "name": "random_07",
+      "W_hex": "0xB2095C87",
+      "json": "random_07.json",
+      "f32": "random_07.f32",
+      "sha256": "ff095ec7196cfc5eb6c472c3ed05b5a362da4606fddea3095d6ff88a3986bc54"
+    },
+    {
+      "name": "random_08",
+      "W_hex": "0x73C2D190",
+      "json": "random_08.json",
+      "f32": "random_08.f32",
+      "sha256": "80a49e5f6bb21533b3f4cfc405d6231912301f1981589fb7651189d5c7312ea9"
+    },
+    {
+      "name": "random_09",
+      "W_hex": "0x0F8762C1",
+      "json": "random_09.json",
+      "f32": "random_09.f32",
+      "sha256": "ad7d1a5ff1824d4a64707717b693445adffd1aaaaa3c885eef63706ab1f499a5"
+    },
+    {
+      "name": "random_10",
+      "W_hex": "0x778EEF04",
+      "json": "random_10.json",
+      "f32": "random_10.f32",
+      "sha256": "97cd4c4f6e3140eb030c491b5cd6d527ce4890ff926109a1c89d22030b61fae2"
+    },
+    {
+      "name": "random_11",
+      "W_hex": "0xBD6A79F7",
+      "json": "random_11.json",
+      "f32": "random_11.f32",
+      "sha256": "c86477e88fec7f207ca02c2b57d6f5588b738b4a590e7a220e3feef1361f09f4"
+    },
+    {
+      "name": "random_12",
+      "W_hex": "0x5F6B764B",
+      "json": "random_12.json",
+      "f32": "random_12.f32",
+      "sha256": "7d21ee62730aa2bcac8ebf57a342f6b2cfbc9e52f2824454cea6f2a7da8eb14b"
+    },
+    {
+      "name": "random_13",
+      "W_hex": "0x04EE4A35",
+      "json": "random_13.json",
+      "f32": "random_13.f32",
+      "sha256": "2b7d9d9add6e3a3eba72a38962994a2b8c2775c2b38137448f98d7cd3a89396f"
+    },
+    {
+      "name": "random_14",
+      "W_hex": "0xE30B45B3",
+      "json": "random_14.json",
+      "f32": "random_14.f32",
+      "sha256": "ec757b7e61d10c6a549b574383f5007828fde08ca3d1a6754fd047c7980227fb"
+    },
+    {
+      "name": "random_15",
+      "W_hex": "0xBDC45CF7",
+      "json": "random_15.json",
+      "f32": "random_15.f32",
+      "sha256": "2cfc2c01c215e58be7f08c0f5fe24580a21e1e9360da125fa56a6dadc43ac949"
+    },
+    {
+      "name": "random_16",
+      "W_hex": "0x1BB3DC28",
+      "json": "random_16.json",
+      "f32": "random_16.f32",
+      "sha256": "ef288eebe4c1e4d2907847a0446cfb003510be1782e94a0dcecb6140956dada6"
+    },
+    {
+      "name": "random_17",
+      "W_hex": "0x761FB844",
+      "json": "random_17.json",
+      "f32": "random_17.f32",
+      "sha256": "bc4cb936b26b2a5b776ebf2b96386c9cc9bfae37b011fc6a9261227d208b4379"
+    },
+    {
+      "name": "random_18",
+      "W_hex": "0x8020D9C2",
+      "json": "random_18.json",
+      "f32": "random_18.f32",
+      "sha256": "cdb9fef6059abe92d0d675b011315989611d0e7758dd2edb64aefef915362ab6"
+    },
+    {
+      "name": "random_19",
+      "W_hex": "0xA7F82E21",
+      "json": "random_19.json",
+      "f32": "random_19.f32",
+      "sha256": "cfefdf3b495160df58b8b303a26052f3419d6c7005ed049fb24c424f6c325703"
+    },
+    {
+      "name": "random_20",
+      "W_hex": "0x8E72B346",
+      "json": "random_20.json",
+      "f32": "random_20.f32",
+      "sha256": "c1998ed3b119f26624491658bc0b577b8acafcaa86de45e4a785e3952368a3e7"
+    },
+    {
+      "name": "random_21",
+      "W_hex": "0x5ED2E39F",
+      "json": "random_21.json",
+      "f32": "random_21.f32",
+      "sha256": "97e61f4e50c1724652794b5b2794fd8a40987d9b4d15889134facd7793ce71f8"
+    },
+    {
+      "name": "random_22",
+      "W_hex": "0x03E75636",
+      "json": "random_22.json",
+      "f32": "random_22.f32",
+      "sha256": "2f2d900f3411a15f5a8152e0055d5dda70532df23ea0a1d2546601f177fa4707"
+    },
+    {
+      "name": "random_23",
+      "W_hex": "0xB5CB474B",
+      "json": "random_23.json",
+      "f32": "random_23.f32",
+      "sha256": "548e61aaaa52c9b84ec2623701d7032037ceeb0c2cbd538f1bb5a2349e4b5f6e"
+    },
+    {
+      "name": "random_24",
+      "W_hex": "0x9673F53B",
+      "json": "random_24.json",
+      "f32": "random_24.f32",
+      "sha256": "6034f899d20a50f4e9c8c2eeca7fe8c521c609bc1e4fdf95e83b8fcd4a9dd640"
+    },
+    {
+      "name": "random_25",
+      "W_hex": "0x7CB4A7C0",
+      "json": "random_25.json",
+      "f32": "random_25.f32",
+      "sha256": "78727e24fde3ca0bbf3ba65d91cf533777739fab5c99f4c887d84930417059f8"
+    },
+    {
+      "name": "random_26",
+      "W_hex": "0xC46B9D54",
+      "json": "random_26.json",
+      "f32": "random_26.f32",
+      "sha256": "9932a5998b257264b2832538fba078362b4438c26524ca5d126768bdc8ae9d05"
+    },
+    {
+      "name": "random_27",
+      "W_hex": "0x5BC27C5B",
+      "json": "random_27.json",
+      "f32": "random_27.f32",
+      "sha256": "b8aebd40eddff0c9e8ae2a6df75a0aa172e34120cf849ec1d550b80d4af7c931"
+    },
+    {
+      "name": "random_28",
+      "W_hex": "0x80B2B1DF",
+      "json": "random_28.json",
+      "f32": "random_28.f32",
+      "sha256": "6af2b377899b206824b296f8c4536176ecac911acf527c88809ac21682ca5fb4"
+    },
+    {
+      "name": "random_29",
+      "W_hex": "0x8FE86BEE",
+      "json": "random_29.json",
+      "f32": "random_29.f32",
+      "sha256": "ab33c18562c09a711cbc7429b5b06936218e2b5e728c8e9ec15c9b32789a24a3"
+    },
+    {
+      "name": "random_30",
+      "W_hex": "0x399ED9BB",
+      "json": "random_30.json",
+      "f32": "random_30.f32",
+      "sha256": "33d78fbb31eab948b99dfeb2ddb1c3cad6c24cdc1c15a3bb360693146fd6a5eb"
+    },
+    {
+      "name": "random_31",
+      "W_hex": "0x6332328B",
+      "json": "random_31.json",
+      "f32": "random_31.f32",
+      "sha256": "bfc201632d33ad452da1eb99f09b80d8c99232267ac330605e9795b5d6b8433d"
+    }
+  ]
+}
