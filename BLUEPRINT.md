@@ -188,7 +188,7 @@ Telefon hoparlörünün moloz içinden duyulup duyulmadığı, pilin 72 saat day
 - Katman 1 çalışırken Katman 2 bildirimleri gereksiz yere çalmasın diye, canlı işaret her çalışmasından sonra en yakın bildirimi ileri kaydırır.
 
 **Katman 3 (v2): Sunucudan kritik uyarı**
-AFAD, EMSC veya USGS akışından bölgede M ≥ eşik bir deprem görülürse, konumunu paylaşmayı seçmiş ve "Güvendeyim" demeyen kullanıcılara periyodik kritik uyarı gönderilir. Şebeke gerektirir. Konum verisi ve KVKK yükü getirdiği için MVP'de yok.
+AFAD, EMSC veya USGS akışından bölgede M ≥ eşik bir deprem görülürse, konumunu paylaşmayı seçmiş ve "Güvendeyim" demeyen kullanıcılara periyodik kritik uyarı gönderilir. Şebeke gerektirir. Konum verisi ve KVKK yükü getirdiği için MVP'de yok. **Patent notu:** "uzaktan talimat → istem → yanıtsızlıkta beacon" zinciri US 9 591 466'nın istemine yakın. Avukat görüşü gelene kadar uzaktan uyarı işareti otomatik başlatmaz, yalnız hatırlatır (docs/research/patent-US9591466.md).
 
 **Tetikleyiciler**
 | Tetik | Cihaz/iOS | Kilitliyken? | Not |
@@ -615,14 +615,16 @@ Kanıt olmadan faz kapısını geçme; geçemiyorsak sayılarla birlikte söyle 
 ## İlerleme
 | ID | Durum | Kanıt |
 |---|---|---|
-| İskelet | ✅ Dizinler, CLAUDE.md, `.claude/agents/` (8 ajan), .gitignore | §3.6 |
-| F0-1 | 🟡 Masa taraması bitti. Cihazda deneme (F0-1b) ve TÜBİTAK teması (F0-1d) açık. | `docs/research/landscape.md` |
+| İskelet | ✅ Dizinler, CLAUDE.md, `.claude/agents/` (8 ajan), .gitignore. `.claude/` ve `CLAUDE.md` yerel, depoya girmez. | §3.6 |
+| F0-1 | 🟡 Masa taraması bitti. Delsar bandı doğrulandı (200–3 000 Hz). Patent ön okuması yapıldı. Açık: cihazda deneme (F0-1b), TÜBİTAK teması (F0-1d), avukat görüşü (F0-1e). | `docs/research/landscape.md`, `docs/research/patent-US9591466.md` |
 | F0-2 | 🟡 Plan ve 9 spike iskeleti (a–i, yeni: AlarmKit) hazır, typecheck geçti. **Gerçek cihazda henüz koşulmadı.** | `docs/field/spikes/F0-2-plan.md`, `Spikes/` |
 | F0-3 | 🟡 Python referansı (30/30 test), 55 vektör, Pd/FER, yanlış alarm, kazanç. Şantiye yanlış alarmı 1,33/sa > hedef, sözleşme r2'de iki çerçeve kuralıyla ele alındı. Moloz modeli [Tahmin]. | `research/sim/reports/F0-3-report.md` |
-| F0-4 | ⬜ Protokol hazır, saha erişimi bekleniyor (§10/6) | `docs/field/F0-4_F0-6_saha-rehberi.md` |
-| F0-5 | ⬜ Cihaz + metal kutu gerekli, spike (c) ile birlikte | — |
-| F0-6 | ⬜ Görüşme rehberi ve 3 ritim WAV'ı hazır | `docs/field/F0-4_F0-6_saha-rehberi.md`, `research/signal/rhythms/` |
-| F0-7 | ⬜ | — |
-| F0-8 | ⬜ Gerekçe noktaları hazır, **insan onayı ile başvuru** | `docs/field/spikes/F0-2-plan.md` |
-| F0-9 | 🟡 ADR-0001 kabul. ADR-0002 (F0-3 sonucu işlendi) ve ADR-0003 önerildi. Sözleşme signal-v0 r2. | `docs/adr/`, `docs/contracts/signal-v0.md` |
+| F0-4 | ⬜ Protokol, CSV formları ve FieldRecorder aracı hazır. Saha erişimi bekleniyor (§10/6). | `docs/field/F0-4_F0-6_saha-rehberi.md`, `docs/field/forms/`, `Tools/FieldRecorder/` |
+| F0-5 | ⬜ Protokol ve form hazır. Cihaz + metal kutu gerekli, spike (c) ile birlikte. | `docs/field/F0-5_pil-tezgahi.md` |
+| F0-6 | ⬜ Görüşme rehberi, onam formu ve 3 ritim WAV'ı hazır. Katılımcı bekleniyor. | `docs/field/F0-4_F0-6_saha-rehberi.md`, `docs/field/F0-6_F0-7_onam.md`, `research/signal/rhythms/` |
+| F0-7 | ⬜ Protokol, onam ve form hazır. Katılımcı ve cihaz bekleniyor. | `docs/field/F0-7_baslatma-kullanilabilirligi.md` |
+| F0-8 | ⬜ Başvuru metni (EN) hazır, **gönderilmedi**. İnsan onayı ve kanıt ekleri bekleniyor. | `store/entitlements/critical-alerts-request.md` |
+| F0-9 | 🟡 ADR-0001 kabul. ADR-0002 ve ADR-0003 önerildi. ADR-0004 (v1 adayları) taslak. Sözleşme signal-v0 r2. | `docs/adr/`, `docs/contracts/signal-v0.md` |
+| Güvenlik | 🟡 Tasarım v0 + sözleşme incelendi: 2 kritik, 7 yüksek bulgu. Önlemler metin kataloğuna ve tasarım v2 istemine taşındı. Tasarım v1 gelince yeniden inceleme. | `docs/safety/findings-2026-10-20.md` |
+| Tasarım | 🟡 v0: 7 ekran. v1 istemi hazır (10 düzeltme + 17 yeni ekran/durum). Metin kataloğu TR/EN (19 ekran), token'lar, devir belgesi hazır. Claude Design'da üretim bekleniyor. | `docs/design/` |
 | F0 kapısı | ⬜ Kanıt yok. Dört maddenin hepsi saha veya cihaz verisi istiyor. | — |

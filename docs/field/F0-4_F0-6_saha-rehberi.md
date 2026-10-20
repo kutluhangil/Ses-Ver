@@ -14,7 +14,7 @@
 | Ses seviye ölçer, IEC 61672 Sınıf 1 (olmazsa Sınıf 2) + akustik kalibratör (94 dB, 1 kHz) | 1 + 1 | LAFmax, LCpeak, LAeq. Her oturum başı ve sonu kalibrasyon. |
 | Ölçüm mikrofonu + kaydedici (48 kHz / 24 bit, AGC kapalı) | 1 | Referans kayıt. Kalibre ton ile seviye bağlanır. |
 | Verici iPhone'lar | 6 model | Örn. SE (3. nesil), 12, 13, 14, 15 Pro, 16. Her biri kılıflı ve kılıfsız. Ses %100, Düşük Güç Modu açık. |
-| Alıcı iPhone'lar (FieldRecorder) | 2 | `Tools/FieldRecorder` hazır değilse geçici çözüm: kayıt `measurement` modunda ve 48 kHz. Kanıt yolu not edilir. |
+| Alıcı iPhone'lar (FieldRecorder) | 2 | `Tools/FieldRecorder`: `measurement` modu, 48 kHz, deneme formu, CSV + JSON yan dosya. Cihazda doğrulanmadıysa sahadan önce bir tezgâh denemesi yapılır. |
 | Test sesi | — | `research/signal/vectors/` + v0 ve v0-L çerçevelerini karışık sırayla çalan liste (A3). |
 | Telefon kafesi (delikli metal), ip/tasma, 5 cm PVC boru | 6 | Telefonun kaybolmaması ve ezilmemesi için. Kapalı poşet **kullanılmaz** (ses zayıflar). |
 | Şerit metre 30 m, lazer metre, işaret bayrakları | — | Gerçek konum. Fotoğrafla birlikte kaydedilir. |
@@ -44,6 +44,8 @@
 - Ölçüt: sessizlik anında %90 doğru algılama. Yanlış "duydum" oranı da raporlanır.
 
 ### A4. Deneme kaydı (her satır bir nokta)
+Boş CSV şablonları: `forms/F0-4_deneme.csv` (moloz) ve `forms/F0-4_tezgah.csv` (tezgâh). FieldRecorder moloz formunu otomatik doldurur.
+
 | Alan | Örnek |
 |---|---|
 | Tarih/saat, oturum, operatör | 2026-11-12 10:40, S2, Op-A |
@@ -72,7 +74,7 @@
 
 - **Katılımcılar:** ≥ 5 kişi (AKUT, GEA, UMKE, gönüllü ekipler; en az biri ekip lideri). Ayrıca TÜBİTAK MAM teması.
 - **Format:** Yarı yapılandırılmış, 45 dk, yüz yüze veya görüntülü. Analiz `design:research-synthesis` ile.
-- **Onam:** Görüşme öncesi KVKK aydınlatma metni ve sözlü/yazılı onam alınır. Kayıt yalnız onayla yapılır. Depoya yalnız takma ad (P1…P5) ve not girer, ham kayıt girmez.
+- **Onam:** Görüşme öncesi KVKK aydınlatma metni ve yazılı onam alınır: `F0-6_F0-7_onam.md`. Kayıt yalnız onayla yapılır. Depoya yalnız takma ad (P1…P5) ve not girer, ham kayıt girmez.
 - **Kural:** Yönlendirici soru yok. "Kullanır mısınız?" yerine geçmiş davranış sorulur.
 
 ### B1. Akış

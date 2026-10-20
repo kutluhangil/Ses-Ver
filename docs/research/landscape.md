@@ -16,12 +16,12 @@
 | 6 | **TÜBİTAK MAM ATEAS** (IMDAT + YARASA) | Ar-Ge, 2 Android uygulama | Kurban (IMDAT) ve kurtarıcı (YARASA) uygulamaları. GSM çökmüşken durum ve konum tespiti hedefleniyor [Kesin: TÜBİTAK MAM] | iOS (kaynakta yok). Olgunluk ve saha kullanımı bilinmiyor. İletişim kanalı (BLE/Wi-Fi/akustik) belirtilmemiş. | Kavram olarak en yakın. **Rakip değil, ortak adayı** (BLUEPRINT §0.3). iOS tarafını Ses Ver tamamlayabilir. | **Yüksek** |
 | 7 | **TÜBİTAK MAM AkuSTECTS** | Donanım prototipi | 3 jeofon + akustik sensör + kulaklık + operatör paneli, kablosuz kit. Sismik bileşen yabancı muadilinden hassas bulunmuş. AFAD ile seri üretim görüşmesi [Kesin: TÜBİTAK] | Kurban tarafı işareti | Kurtarıcı tarafında profesyonel alternatif. Ses Ver sinyali AkuSTECTS'in akustik kanalında da algılanabilir mi? [Tahmin] Bant 3 kHz üstüne çıkıyorsa belirsiz. | **Yüksek** |
 | 8 | **İTÜ MİAM Enkaz Dinleme** | Web uygulaması (2023) | Telefon mikrofonundan 350–5 000 Hz bant filtre + kazanç. İnternetsiz çalışır, kayıt cihaz dışına çıkmaz. Yarım günde yazılmış. Bazı iOS cihazlarda çalışmadığı bildirilmiş [Muhtemel] | Sinyal çözme, işaret tanıma, yer kestirimi | Kurtarıcıların telefonu "dinleme aracı" olarak kullanmaya **istekli** olduğunun kanıtı. F0 kapısı geçilmezse varılacak "kurtarıcı dinleme aracı" (BLUEPRINT §6) ile örtüşür. | Orta (akademik, Dr. Ozan Sarıer) |
-| 9 | **Takada, Tokyo Üniv. (ASA/ASJ, Aralık 2025)** | Akademik bildiri | Ters yön: kurtarıcı iki dipol (+ moloz için monopol) ses yayar, kurbanın telefonu dinler ve konumu radyo ile iletir. Eğitim enkazında 10 m² alanda 5,04° açı hatası. Kurbanın yanıt vermesi gerekmiyor [Muhtemel: basın bülteni] | Kurbanın telefonunda dinleyen bir uygulama gerekir. Radyo bağlantısı gerekir. Hakemli makale bulunamadı. | Pil yetmezse BLUEPRINT §6'daki B planı. Monopol + dipol fikri v1.1 transponder tasarımına girdi. | Orta (akademik) |
+| 9 | **Takada, Tokyo Üniv. (ASA/ASJ, Aralık 2025)** | Akademik bildiri | Ters yön: kurtarıcı iki dipol (+ moloz için monopol) ses yayar, kurbanın telefonu dinler ve konumu radyo ile iletir. Eğitim enkazında 10 m² alanda 5,04° açı hatası. Kurbanın yanıt vermesi gerekmiyor. Sonraki adım yükseklik açısı [Muhtemel: basın bülteni]. İlgili hakemli makale: JASA Express Letters 6(6) 062801, "Localization system for urban search and rescue using smartphone microphones" (4 hoparlörle dipol alan; yazarların aynı grup olduğu doğrulanmadı). | Kurbanın telefonunda dinleyen bir uygulama gerekir. Radyo bağlantısı gerekir. Bildiri özetinin tam metni bulunamadı. | Pil yetmezse BLUEPRINT §6'daki B planı. Monopol + dipol fikri v1.1 transponder tasarımına girdi. | Orta (akademik) |
 | 10 | **BeepBeep (Peng vd., SenSys 2007; TECS 2012)** | Akademik yöntem | İki yönlü algılama + kendi kaydını dinleme + örnek sayma ile saat senkronsuz mesafe. Açık alanda ~1–2 cm, >10 m menzil [Kesin: makale] | Moloz, çok yollu yayılım, düşük SNR. Ayrıca taraflar arası veri kanalı varsayar. | BLUEPRINT §3.4.3'ün temeli. Ses Ver'de Δv akustik yanıtın içine kodlanır, ayrı veri kanalı gerekmez (bu bir tasarım farkı). | — |
 | 11 | **Tai & Yu, Sensors 2022** | Akademik | Kurbanın telefonu BLE işareti/otomatik yanıt verir. Ahşap ve kiremit altında ~2 m hata [Muhtemel: PMC özeti] | Akustik | BLE kanalının (BLUEPRINT §3.2) moloz altında da işe yarayabildiğine dair destek | — |
 | 12 | **Telefon mikrofonuyla nefes/kalp atışı algılama (2023 poster)** | Akademik | Derin öğrenmeyle cihazda canlılık belirtisi algılama [Muhtemel] | — | Uzak backlog: kurtarıcı tarafında "vuruntu/ses" algılama (B planı) | — |
-| 13 | **Profesyonel dinleme cihazları (Delsar LifeDetector LD3, Mini)** | Ticari donanım | Sismik + akustik sensörler, çok sensörlü güç karşılaştırması. Mini: 2 sismik + 1 akustik, 1 Hz–3 kHz, ~10 sa pil, IP67 [Muhtemel: satıcı] | Kurban tarafı işareti, veri | Sıcak-soğuk yöntemimiz (§3.4.2) aynı ilkeyle (sensörler arası güç karşılaştırması) çalışır. Delsar bandı ~3 kHz'te bitiyor. v0 bandının (1,8–4,2 kHz) üst yarısı bu cihazlarla duyulmayabilir [Tahmin]. | Düşük (ticari) |
-| 14 | **ABD patenti 9 591 466** "emergency beacon signal" etkinleştirme | Patent | Enkaz altındaki akıllı telefonun işaret sinyali vermesi | — | **FTO (serbest kullanım) incelemesi gerekli.** Kapsamı okunmadı. → `legal:legal-risk-assessment`, R12 | — |
+| 13 | **Profesyonel dinleme cihazları (Delsar LifeDetector LD3, Mini)** | Ticari donanım | Sismik + akustik sensörler, çok sensörlü güç karşılaştırması. Akustik sensör **200–3 000 Hz**, sismik 1–3 000 Hz. Operatör filtreleri tipik olarak 100–600 Hz veya 200–1 000 Hz [Kesin: Savox datasheet]. Bir satıcı 80–4 500 Hz yazıyor, büyük olasılıkla eski. | Kurban tarafı işareti, veri | Sıcak-soğuk yöntemimiz (§3.4.2) aynı ilkeyle çalışır. **v0 bandının (1,8–4,2 kHz) ~%50'si LD3 akustik bandının dışında.** v0-L (1,2–3,0 kHz) tamamen içinde. Operatörün yaygın filtre ayarlarında ikisi de büyük ölçüde kesilir. | Düşük (ticari) |
+| 14 | **ABD patenti 9 591 466** (BlackBerry → Malikie, 2033'e kadar) | Patent | Şebekeden gelen RF talimatı → kullanıcıya istem → yanıt yoksa ses/veri kapatılıp farklı bantta RF beacon | Akustik işaret yok | Ön okuma: MVP'de istemin birden fazla unsuru yok. v2 Katman 3 riskli. Ayrıntı: `patent-US9591466.md` | — |
 
 ## 2. Çıkarımlar
 
@@ -31,7 +31,11 @@
    - 72 saat pil bütçesi
    - iOS kurtarıcı aracı
 2. **Yerelde en yakın iki aktör ATEAS ve Acil İzmir.** İkisi de rakip olmaktan çok birlikte çalışabilirlik ortağı. Ortak bir BLE UUID'si ve açık SignalSpec, "her uygulama kendi sinyalini çalar" parçalanmasını önler.
-3. **Bant uyumu sorusu yeni.** Profesyonel dinleme cihazları ~3 kHz'te bitiyor [Muhtemel]. Uygulamasız kurtarıcının **cihazla** da duyabilmesi için v0-L (1,2–3,0 kHz) varyantı yalnız moloz için değil, ekipman uyumu için de değerlendirilmeli. → ADR-0002 yeniden değerlendirme tetikleyicisine eklendi (F0-3/F0-4 karşılaştırması).
+3. **Bant uyumu sorusu doğrulandı.**
+   - Delsar LD3 akustik sensörü 200–3 000 Hz [Kesin: üretici datasheet]. v0'ın üst yarısı bu cihazla duyulmaz.
+   - F0-3 simülasyonu da [Tahmin] moloz modelinde v0-L'yi 3–10 dB önde buldu.
+   - İki bağımsız gerekçe aynı yöne işaret ediyor. Bu yüzden v1 çalışmasında 1,2–3,0 kHz bandı birincil aday (ADR-0002, ADR-0004 taslağı).
+   - Karar yine F0-4 saha verisine bağlı: telefon hoparlörünün 1,2 kHz'teki verimi ölçülmedi.
 4. **Takada yaklaşımı B planı olarak somut.** Ancak kurban tarafında dinleyen uygulama ve radyo yolu gerektirir. Pil açısından avantajı F0-5'e göre değerlendirilmeli.
 5. **İTÜ örneği talebi gösteriyor.** Kurtarıcılar sahada telefonla dinlemeye zaten başvurmuş. Kurtarıcı aracının benimsenme riski (R8) bu kanıtla biraz azalıyor [Tahmin].
 6. **Patent riski açık.** FTO incelemesi F1'den önce yapılmalı.
@@ -43,10 +47,10 @@
 | F0-1b | Düdüğüm, Whistle for Sport & SOS, Acil İzmir ve AFAD Acil'i iPhone'a kurup gerçek davranışı not etmek: kilitliyken başlatma, arka planda süre, ses düzeyi davranışı | İnsan + `field-qa` |
 | F0-1c | Acil İzmir'in Bluetooth yayın biçimi (UUID, içerik) | `ios-platform` (BLE tarayıcı spike'ı ile) |
 | F0-1d | ATEAS (IMDAT/YARASA) iletişim kanalı ve durumu: TÜBİTAK MAM'a temas (**insan onayı gerekli**, CLAUDE.md) | İnsan |
-| F0-1e | ABD 9 591 466 ve benzeri patentlerin kapsam okuması | `legal:legal-risk-assessment` + avukat |
-| F0-1f | Delsar/AkuSTECTS akustik sensör frekans yanıtı (datasheet) | Orkestratör |
-| F0-1g | Takada ASA bildirisinin özetini veya makalesini bulmak | Orkestratör |
-| — | BLUEPRINT §0.3'te "Real Whistle" adı düzeltilmeli | Orkestratör |
+| F0-1e | 🟡 Ön okuma yapıldı: `patent-US9591466.md`. MVP için düşük risk. v2 Katman 3 için tasarım kuralı kondu. Avukat görüşü ve benzer patent taraması açık. | Orkestratör → avukat |
+| F0-1f | ✅ Delsar LD3: akustik 200–3 000 Hz. ⬜ AkuSTECTS datasheet bulunamadı, F0-1d temasında sorulacak. | Orkestratör / İnsan |
+| F0-1g | 🟡 Bildiri özeti bulunamadı. İlgili JASA-EL makalesi bulundu (6(6) 062801), tam metin okunmadı. | Orkestratör |
+| — | ✅ BLUEPRINT §0.3'te "Real Whistle" adı düzeltildi | Orkestratör |
 
 ## Kaynaklar
 - [Düdüğüm (tamindir)](https://www.tamindir.com/indir/dudugum/) · [Afet sonrası uygulamalar (CNN Türk)](https://www.cnnturk.com/video/turkiye/afet-sonrasi-hayat-kurtaran-uygulamalar-1894348) · [Onedio derlemesi](https://onedio.com/haber/aci-tecrubelerle-ogrendigimiz-depremin-etkilerine-karsi-telefonunuzda-mutlaka-olmasi-gereken-10-uygulama-1128525)
@@ -59,5 +63,7 @@
 - [Takada: Using smartphones to improve disaster search and rescue (acoustics.org)](https://acoustics.org/using-smartphones-to-improve-disaster-search-and-rescue/) · [Critical Comms](https://www.criticalcomms.com.au/content/research/news/smartphone-microphones-used-for-disaster-search-and-rescue-706460394)
 - [BeepBeep SenSys 2007 (PDF)](https://www.cs.purdue.edu/homes/chunyi/pubs/sensys106-beepbeep.pdf) · [BeepBeep TECS 2012 (PDF)](https://www.cs.purdue.edu/homes/chunyi/pubs/peng-tecs12.pdf)
 - [Using Smartphones to Locate Trapped Victims in Disasters (Sensors 2022, PMC)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9572018/)
+- [Savox Delsar LD3 datasheet](https://info.savox.com/hubfs/DELSAR%20LD3%20DATA%20SHEET%20for%20website.pdf) · [Fresno LD3B işletme prosedürü](https://documents.fresno.gov/WebLink/0/edoc/2047041/306.027%20-%20Operating%20Procedure%20for%20the%20Life%20Detector%20LD3B.pdf)
+- [JASA Express Letters: Localization system for urban search and rescue using smartphone microphones](https://pubs.aip.org/asa/jel/article/6/6/062801/3393613/Localization-system-for-urban-search-and-rescue) · [EurekAlert basın bülteni](https://www.eurekalert.org/news-releases/1108099)
 - [Delsar LD3 (satıcı)](https://img0.hospitalityhub.com.au/delsar-lifedetector-ld3-seismic-and-acoustic-listening-device/p/234201) · [Delsar Mini](https://www.allsafeindustries.com/Delsar-Mini-2-Sensor-Seismic-Acoustic-Listening-System.aspx)
 - [US 9 591 466 (USPTO PDF)](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/9591466)
