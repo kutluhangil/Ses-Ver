@@ -586,6 +586,7 @@ TestFlight (ekipler + 50 sivil). App Review notları, gizlilik etiketi ("Veri to
 4. Kurtarıcı modu herkese açık mı kalsın? Benim önerim açık + güvenlik ekranı.
 5. SignalSpec açık lisansla yayımlansın mı? Benim önerim evet.
 6. Yıkım alanı ve eğitim enkazı erişimi için kimi tanıyorsun? F0-4'ün kritik yolu bu.
+7. SignalSpec v0 hiç yayımlanmasın, ilk açık protokol v1 olsun mu? Benim önerim evet (ADR-0004: sahada v0/v1 karışıklığını sıfır maliyetle önler).
 
 ---
 
@@ -618,7 +619,7 @@ Kanıt olmadan faz kapısını geçme; geçemiyorsak sayılarla birlikte söyle 
 | İskelet | ✅ Dizinler, CLAUDE.md, `.claude/agents/` (8 ajan), .gitignore. `.claude/` ve `CLAUDE.md` yerel, depoya girmez. | §3.6 |
 | F0-1 | 🟡 Masa taraması bitti. Delsar bandı doğrulandı (200–3 000 Hz). Patent ön okuması yapıldı. Açık: cihazda deneme (F0-1b), TÜBİTAK teması (F0-1d), avukat görüşü (F0-1e). | `docs/research/landscape.md`, `docs/research/patent-US9591466.md` |
 | F0-2 | 🟡 Plan ve 9 spike iskeleti (a–i, yeni: AlarmKit) hazır, typecheck geçti. **Gerçek cihazda henüz koşulmadı.** | `docs/field/spikes/F0-2-plan.md`, `Spikes/` |
-| F0-3 | 🟡 Python referansı (30/30 test), 55 vektör, Pd/FER, yanlış alarm, kazanç. Şantiye yanlış alarmı 1,33/sa > hedef, sözleşme r2'de iki çerçeve kuralıyla ele alındı. Moloz modeli [Tahmin]. | `research/sim/reports/F0-3-report.md` |
+| F0-3 | 🟡 Python referansı, 55 vektör, Pd/FER, yanlış alarm, kazanç. Şantiye yanlış alarmı 1,33/sa > hedef, sözleşme r2'de iki çerçeve kuralıyla ele alındı. **F0-3b:** v1 adayları ölçüldü (42/42 test). Öneri: B1 + RS t=1 + P1, 96 ms chirp; alıcıda E0+E4 (+3,7 dB). Moloz modeli [Tahmin]. Sıradaki: F0-3c. | `research/sim/reports/F0-3-report.md`, `F0-3b-report.md`, ADR-0004 |
 | F0-4 | ⬜ Protokol, CSV formları ve FieldRecorder aracı hazır. Saha erişimi bekleniyor (§10/6). | `docs/field/F0-4_F0-6_saha-rehberi.md`, `docs/field/forms/`, `Tools/FieldRecorder/` |
 | F0-5 | ⬜ Protokol ve form hazır. Cihaz + metal kutu gerekli, spike (c) ile birlikte. | `docs/field/F0-5_pil-tezgahi.md` |
 | F0-6 | ⬜ Görüşme rehberi, onam formu ve 3 ritim WAV'ı hazır. Katılımcı bekleniyor. | `docs/field/F0-4_F0-6_saha-rehberi.md`, `docs/field/F0-6_F0-7_onam.md`, `research/signal/rhythms/` |

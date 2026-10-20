@@ -65,6 +65,35 @@ Kısıtlar değişmedi:
 4. Her aday için `Ton`, en kötü 60 sn görev döngüsü ve CPU.
 5. Çıktı: `research/sim/reports/F0-3b-report.md`. Karar tablosu: aday × {FER 0,1 için gereken SNR, yanlış kabul/sa, görev döngüsü, CPU}.
 
+## F0-3b sonucu (2026-10-20)
+Kaynak: `research/sim/reports/F0-3b-report.md`, 42/42 test. Eksen SNR_wb, yani aynı hoparlör genliği ve aynı gürültü yoğunluğu. Simülasyon, saha değil.
+
+| Aday | FER 0,1 AWGN | FER 0,1 DRR −6 | FER 0,1 moloz R2 [Tahmin] | Sahte kabul/sa (tek çerçeve) | `Ton` | En kötü 60 sn |
+|---|---|---|---|---|---|---|
+| v0 | −19,6 | −10,6 | +6,0 | 0,89 | 0,992 | %11,57 |
+| v0 + E0 + E4 | −23,3 | −15,3 | +2,1 | 1,28 | 0,992 | %11,57 |
+| **B1 + E1 (t=1) + P1 + E4** | **−24,4** | **−16,3** | **−5,1** | **0,61** | 1,120 | %13,07 ✗ |
+| B1 + E1 (t=2) | −23,3 | −15,1 | −4,1 | **38,5** ✗ | 1,120 | %13,07 ✗ |
+| B1 + E3 + P1 + E4 | −24,6 | −16,8 | −5,6 | 1,06 | 1,248 | %14,56 ✗ |
+
+İki çerçeve kuralıyla sahte kabul her adayda 0 gözlendi (%95 üst sınır 0,20/sa).
+
+**Bulgular:**
+1. **E0 + E4, v0 formatını değiştirmeden 3,7 dB (AWGN), 4,7 dB (DRR −6) kazandırıyor.** Bunlar DetectorKit'e girer, sözleşme §6.1'e eklendi.
+2. **RS kod çözücüsü en çok 1 sembol düzeltmeli (`t_max = 1`).** `t = 2` rastgele adayların %15,7'sini kabul ediyor. Bu kural sözleşmede ZORUNLU yazılmalı.
+3. **Önerilen görev döngüsü telafileri yetmiyor.** 100 ms chirp ile %12,13, 11 sn aralık ile %13,07. Bütçeye sığmanın iki yolu:
+   - `Ton` ≤ 1,028 sn olmalı. Örneğin giriş/senk chirp'leri 96 ms olursa `Ton` = 1,024 sn.
+   - Ya da nominal aralık ≥ 11,6 sn olmalı.
+4. **Yalnız bant farkı (V-a) sürüm ayrımı için yetmiyor.**
+   - v0 alıcısı, v1 çerçevelerinin %0,2–1,0'ında CRC'yi geçen sahte çözüm üretiyor.
+   - Aynı ID ≈ %4 tekrarlanıyor; bu, iki çerçeve kuralını zayıflatıyor.
+
+**Karar önerisi (onay bekliyor):**
+- **v0 hiç yayımlanmaz, ilk yayımlanan protokol v1 olur.** Sahada v0 alıcısı olmayacağı için 4. bulgu ortadan kalkar. Bu, en ucuz çözüm. v0, F0-4 saha karşılaştırması için araştırma formatı olarak kalır.
+- v1 = B1 + E1 (`t_max = 1`) + P1, giriş/senk chirp'leri 96 ms. Alıcıda E0 + E4.
+- Bant (B1) kararı F0-4 hoparlör ölçümüne bağlı. B1 elenirse aynı yapı B0 bandında kurulur.
+- **F0-3c (sonraki simülasyon):** 96 ms chirp ile tespit eşiğinin yeniden kalibrasyonu ve Pd/FER. Ayrıca pembe ve şantiye gürültüsü altında Pd/FER, gerçek işaretin iki çerçeve kuralıyla doğrulanma süresi ve RS silme (erasure) çözme.
+
 ## Sonuçlar
 - E0/E4 format değiştirmez, risksizdir.
 - v1 formatı açık protokol olarak yayımlanmadan önce kesinleşmeli. Yayından sonra değişiklik, sahadaki cihazları böler.

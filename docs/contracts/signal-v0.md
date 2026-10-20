@@ -146,6 +146,12 @@ Alt sınır dahil, üst sınır hariç. `mode = 1` (zincir) çerçevelerinde `li
 4. Alçalan senk chirp'i ile ince zamanlama. Yükselen ve alçalan chirp birlikte, zaman-frekans belirsizliğini çözer.
 5. Her sembolde analitik sinyal × eşlenik taban chirp'i (dechirp), FFT. Kaydırma `s`, `s·B/M` ve `s·B/M − B` frekanslarındaki enerjilerin toplamıyla seçilir. Bunun nedeni, aşırı örneklenmiş CSS'de sarma sonrası bölümün ayrı bir frekansa düşmesidir. Alternatif: 16 şablonla tutarlı korelasyon. F0-3'te 1,4–1,5 dB daha iyi çıktı, CPU maliyeti daha yüksek. Swift uygulamasında seçim CPU ölçümüne göre yapılır.
 
+Önerilen alıcı iyileştirmeleri (F0-3b, format değişmez):
+- E0: tutarlı 16 şablon kararı.
+- E4: aynı ID'nin ardışık iki çerçevesinde sembol düzeyinde yumuşak birleştirme.
+
+Birlikte FER 0,1 için gereken SNR'ı AWGN'de 3,7 dB, yankıda 4,7 dB düşürür (ADR-0004).
+
 Ölçülen gereken SNR (F0-3, AWGN, v0): tespit Pd = 0,9 için −16,2 dB, çözme FER = 0,1 için −10,7 dB. Sınırlayan halka veri çözmedir. Ayrıntı: `research/sim/reports/F0-3-report.md`.
 
 ## 7. Test vektörleri
@@ -160,7 +166,7 @@ Alt sınır dahil, üst sınır hariç. `mode = 1` (zincir) çerçevelerinde `li
 ## 8. Sürümleme ve uyumluluk
 
 - v0'da sürüm alanı yoktur. Sonraki sürümler, v0 alıcısının yanlış çözmeyeceği şekilde ayırt edilmelidir: farklı senk deseni **veya** CRC başlangıç değeri farkı. Seçim v1 ADR'sinde yazılır.
-- v1 yanıt çerçeveleri (`mode = 3`) `mode` (bit 9…8) ve `crc` (bit 7…0) konumlarını korur. Böylece v0 alıcısı onları doğrulayıp sınıflandırabilir.
+- ~~v1 yanıt çerçeveleri (`mode = 3`) `mode` (bit 9…8) ve `crc` (bit 7…0) konumlarını korur.~~ **Geçersiz (F0-3b):** v1 adayı (B1 + RS + P1) bu konumları koruyamıyor. ADR-0004 önerisine göre v0 yayımlanmayacağı için sahada geriye uyumluluk gerekmiyor.
 - Her değişiklik yeni sürüm numarası alır. Değişiklik notu, eski sürümle çözülebilirlik durumunu içermek ZORUNDADIR.
 
 ## 9. Bilinen sınırlar (bilgi)

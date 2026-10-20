@@ -1,0 +1,381 @@
+{
+ "seed": 61004,
+ "hours_per_pass": 18.0,
+ "wall_s": 159.7,
+ "results": [
+  {
+   "pass": "B0",
+   "layout": "v0",
+   "decoder": "en",
+   "hours": 18.0,
+   "pre_crc": 4412,
+   "pre_per_h": 245.11111111111111,
+   "single": 16,
+   "single_verified": 0,
+   "e4_pairs": 893,
+   "e4_extra": 2,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 0.8888888888888888,
+   "single_ci95": [
+    0.5080768029800845,
+    1.443499866531164
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 1.0,
+   "single_plus_e4_ci95": [
+    0.5926633766888628,
+    1.580431125973777
+   ]
+  },
+  {
+   "pass": "B0",
+   "layout": "v0",
+   "decoder": "coh",
+   "hours": 18.0,
+   "pre_crc": 4412,
+   "pre_per_h": 245.11111111111111,
+   "single": 20,
+   "single_verified": 0,
+   "e4_pairs": 899,
+   "e4_extra": 3,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 1.1111111111111112,
+   "single_ci95": [
+    0.6786955325224413,
+    1.716020994593033
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 1.2777777777777777,
+   "single_plus_e4_ci95": [
+    0.8100015020580377,
+    1.9172940497129463
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E1",
+   "decoder": "rs_t0",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 0,
+   "single_verified": 0,
+   "e4_pairs": 935,
+   "e4_extra": 0,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 0.0,
+   "single_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 0.0,
+   "single_plus_e4_ci95": [
+    0.0,
+    0.2049377474507742
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E1",
+   "decoder": "rs_t1",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 6,
+   "single_verified": 0,
+   "e4_pairs": 932,
+   "e4_extra": 5,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 0.3333333333333333,
+   "single_ci95": [
+    0.12232745852726949,
+    0.7255263345843713
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 0.6111111111111112,
+   "single_plus_e4_ci95": [
+    0.305064464846491,
+    1.0934465840723309
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E1",
+   "decoder": "rs_t2",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 693,
+   "single_verified": 0,
+   "e4_pairs": 664,
+   "e4_extra": 93,
+   "e4_verified": 0,
+   "dup_ids": 84,
+   "single_per_h": 38.5,
+   "single_ci95": [
+    35.68654125159645,
+    41.47631025433746
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 43.666666666666664,
+   "single_plus_e4_ci95": [
+    40.66690292650014,
+    46.829157085428065
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E1",
+   "decoder": "rs_t2s",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 4,
+   "single_verified": 0,
+   "e4_pairs": 934,
+   "e4_extra": 4,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 0.2222222222222222,
+   "single_ci95": [
+    0.060548076312573605,
+    0.5689771486335387
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 0.4444444444444444,
+   "single_plus_e4_ci95": [
+    0.19187956537491674,
+    0.8757327344551842
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E3",
+   "decoder": "coh",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 18,
+   "single_verified": 0,
+   "e4_pairs": 933,
+   "e4_extra": 1,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 1.0,
+   "single_ci95": [
+    0.5926633766888628,
+    1.580431125973777
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 1.0555555555555556,
+   "single_plus_e4_ci95": [
+    0.635513398020374,
+    1.648380753976977
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E1E3",
+   "decoder": "rs_t0",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 0,
+   "single_verified": 0,
+   "e4_pairs": 935,
+   "e4_extra": 0,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 0.0,
+   "single_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 0.0,
+   "single_plus_e4_ci95": [
+    0.0,
+    0.2049377474507742
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E1E3",
+   "decoder": "rs_t1",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 14,
+   "single_verified": 0,
+   "e4_pairs": 929,
+   "e4_extra": 1,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 0.7777777777777778,
+   "single_ci95": [
+    0.4252183486833664,
+    1.3049789512130878
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 0.8333333333333334,
+   "single_plus_e4_ci95": [
+    0.466410340710184,
+    1.3744566039714363
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E1E3",
+   "decoder": "rs_t2",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 721,
+   "single_verified": 0,
+   "e4_pairs": 672,
+   "e4_extra": 88,
+   "e4_verified": 0,
+   "dup_ids": 115,
+   "single_per_h": 40.05555555555556,
+   "single_ci95": [
+    37.184755517847535,
+    43.089166995370725
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 44.94444444444444,
+   "single_plus_e4_ci95": [
+    41.90033354827437,
+    48.151254505994956
+   ]
+  },
+  {
+   "pass": "B1",
+   "layout": "v1-E1E3",
+   "decoder": "rs_t2s",
+   "hours": 18.0,
+   "pre_crc": 4582,
+   "pre_per_h": 254.55555555555554,
+   "single": 4,
+   "single_verified": 0,
+   "e4_pairs": 934,
+   "e4_extra": 1,
+   "e4_verified": 0,
+   "dup_ids": 0,
+   "single_per_h": 0.2222222222222222,
+   "single_ci95": [
+    0.060548076312573605,
+    0.5689771486335387
+   ],
+   "single_verified_per_h": 0.0,
+   "single_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "e4_verified_per_h": 0.0,
+   "e4_verified_ci95": [
+    0.0,
+    0.2049377474507742
+   ],
+   "single_plus_e4_per_h": 0.2777777777777778,
+   "single_plus_e4_ci95": [
+    0.09019368833991225,
+    0.6482406710734817
+   ]
+  }
+ ]
+}

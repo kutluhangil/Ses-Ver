@@ -1,0 +1,38 @@
+[
+ {
+  "wave": "v0",
+  "ton_s": 0.992,
+  "nominal_s": 10,
+  "defer_fraction": 0.0
+ },
+ {
+  "wave": "v1-E1",
+  "ton_s": 1.12,
+  "nominal_s": 10,
+  "defer_fraction": 0.35500684005472044
+ },
+ {
+  "wave": "v1-E1",
+  "ton_s": 1.12,
+  "nominal_s": 11,
+  "defer_fraction": 0.0005870046960375683
+ },
+ {
+  "wave": "v1-E1s",
+  "ton_s": 1.04,
+  "nominal_s": 10,
+  "defer_fraction": 0.2742311938495508
+ },
+ {
+  "wave": "v1-E1s",
+  "ton_s": 1.04,
+  "nominal_s": 11,
+  "defer_fraction": 0.00017800142401139208
+ },
+ {
+  "wave": "v1-E3",
+  "ton_s": 1.248,
+  "nominal_s": 10,
+  "defer_fraction": 1.0
+ }
+]

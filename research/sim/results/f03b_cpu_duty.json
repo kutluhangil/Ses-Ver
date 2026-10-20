@@ -1,0 +1,202 @@
+{
+ "machine": "arm64",
+ "python": "3.15.0",
+ "duration_s": 120,
+ "duty": [
+  {
+   "wave": "v0",
+   "nominal_s": 10.0,
+   "ton_s": 0.992,
+   "tf_s": 1.232,
+   "duty_nominal": 0.0992,
+   "worst_60s_at_0.86": 0.11573333333334973,
+   "ok": true,
+   "min_jitter_lb_for_12pct": 0.855,
+   "min_nominal_s_at_0.86": 10.0
+  },
+  {
+   "wave": "v1-E1",
+   "nominal_s": 10.0,
+   "ton_s": 1.12,
+   "tf_s": 1.36,
+   "duty_nominal": 0.11200000000000002,
+   "worst_60s_at_0.86": 0.13066666666668256,
+   "ok": false,
+   "min_jitter_lb_for_12pct": 0.995,
+   "min_nominal_s_at_0.86": 11.6
+  },
+  {
+   "wave": "v1-E1",
+   "nominal_s": 11.0,
+   "ton_s": 1.12,
+   "tf_s": 1.36,
+   "duty_nominal": 0.10181818181818182,
+   "worst_60s_at_0.86": 0.13066666666668256,
+   "ok": false,
+   "min_jitter_lb_for_12pct": 0.905,
+   "min_nominal_s_at_0.86": 11.6
+  },
+  {
+   "wave": "v1-E1s",
+   "nominal_s": 10.0,
+   "ton_s": 1.04,
+   "tf_s": 1.28,
+   "duty_nominal": 0.10400000000000001,
+   "worst_60s_at_0.86": 0.1213333333333472,
+   "ok": false,
+   "min_jitter_lb_for_12pct": 0.985,
+   "min_nominal_s_at_0.86": 11.4
+  },
+  {
+   "wave": "v1-E3",
+   "nominal_s": 10.0,
+   "ton_s": 1.248,
+   "tf_s": 1.488,
+   "duty_nominal": 0.1248,
+   "worst_60s_at_0.86": 0.14560000000003678,
+   "ok": false,
+   "min_jitter_lb_for_12pct": null,
+   "min_nominal_s_at_0.86": 13.8
+  },
+  {
+   "wave": "v1-E1E3",
+   "nominal_s": 10.0,
+   "ton_s": 1.44,
+   "tf_s": 1.68,
+   "duty_nominal": 0.144,
+   "worst_60s_at_0.86": 0.1680000000001153,
+   "ok": false,
+   "min_jitter_lb_for_12pct": null,
+   "min_nominal_s_at_0.86": 17.0
+  }
+ ],
+ "cpu": [
+  {
+   "wave": "v0",
+   "receiver": "energy (v0)",
+   "frames_every_10s": false,
+   "block": 1024,
+   "events": 0,
+   "ms_per_audio_s": 2.889508333333335,
+   "rtf": 346.07963869285703
+  },
+  {
+   "wave": "v0",
+   "receiver": "energy (v0)",
+   "frames_every_10s": false,
+   "block": 4800,
+   "events": 0,
+   "ms_per_audio_s": 3.0762166666666646,
+   "rtf": 325.07463171753204
+  },
+  {
+   "wave": "v0",
+   "receiver": "energy (v0)",
+   "frames_every_10s": true,
+   "block": 1024,
+   "events": 12,
+   "ms_per_audio_s": 3.735783333333339,
+   "rtf": 267.68147688793476
+  },
+  {
+   "wave": "v0",
+   "receiver": "energy (v0)",
+   "frames_every_10s": true,
+   "block": 4800,
+   "events": 12,
+   "ms_per_audio_s": 4.075975000000002,
+   "rtf": 245.34007200731102
+  },
+  {
+   "wave": "v0",
+   "receiver": "E0 coherent",
+   "frames_every_10s": true,
+   "block": 1024,
+   "events": 12,
+   "ms_per_audio_s": 3.8313666666666655,
+   "rtf": 261.003471346169
+  },
+  {
+   "wave": "v0",
+   "receiver": "E0 coherent",
+   "frames_every_10s": true,
+   "block": 4800,
+   "events": 12,
+   "ms_per_audio_s": 3.53323333333333,
+   "rtf": 283.0268781191923
+  },
+  {
+   "wave": "v1-E1",
+   "receiver": "V1Receiver + RS t2s",
+   "frames_every_10s": false,
+   "block": 1024,
+   "events": 1,
+   "ms_per_audio_s": 2.9627666666666532,
+   "rtf": 337.5223608564082
+  },
+  {
+   "wave": "v1-E1",
+   "receiver": "V1Receiver + RS t2s",
+   "frames_every_10s": false,
+   "block": 4800,
+   "events": 1,
+   "ms_per_audio_s": 2.637691666666668,
+   "rtf": 379.1193688926238
+  },
+  {
+   "wave": "v1-E1",
+   "receiver": "V1Receiver + RS t2s",
+   "frames_every_10s": true,
+   "block": 1024,
+   "events": 13,
+   "ms_per_audio_s": 3.8319916666666716,
+   "rtf": 260.9609015329275
+  },
+  {
+   "wave": "v1-E1",
+   "receiver": "V1Receiver + RS t2s",
+   "frames_every_10s": true,
+   "block": 4800,
+   "events": 13,
+   "ms_per_audio_s": 3.4712999999999994,
+   "rtf": 288.0765131218852
+  },
+  {
+   "wave": "v1-E3",
+   "receiver": "V1Receiver + CRC",
+   "frames_every_10s": true,
+   "block": 1024,
+   "events": 13,
+   "ms_per_audio_s": 4.524524999999994,
+   "rtf": 221.01767588862947
+  },
+  {
+   "wave": "v1-E3",
+   "receiver": "V1Receiver + CRC",
+   "frames_every_10s": true,
+   "block": 4800,
+   "events": 13,
+   "ms_per_audio_s": 4.122024999999999,
+   "rtf": 242.59920791358618
+  },
+  {
+   "wave": "v0",
+   "receiver": "V1Receiver + E0 + E4",
+   "frames_every_10s": true,
+   "block": 1024,
+   "events": 12,
+   "ms_per_audio_s": 4.391266666666678,
+   "rtf": 227.72472635078657
+  },
+  {
+   "wave": "v0",
+   "receiver": "V1Receiver + E0 + E4",
+   "frames_every_10s": true,
+   "block": 4800,
+   "events": 12,
+   "ms_per_audio_s": 3.7177583333333133,
+   "rtf": 268.97929083610114
+  }
+ ],
+ "rs_decode_us_per_call_python": 0.48925000000004104
+}

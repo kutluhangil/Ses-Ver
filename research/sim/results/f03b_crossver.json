@@ -1,0 +1,589 @@
+{
+ "seed": 81007,
+ "wall_s": 155.8,
+ "results": [
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1",
+   "snr_ib_db": 20.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 1362,
+    "beacon": 2
+   },
+   "pre": 1364,
+   "valid": 2,
+   "valid_ids": [
+    2868,
+    929
+   ],
+   "valid_per_frame_ci95": [
+    0.00024220927854396495,
+    0.007224687667723959
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1",
+   "snr_ib_db": 20.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 1355,
+    "response": 1,
+    "beacon": 8
+   },
+   "pre": 1364,
+   "valid": 9,
+   "valid_ids": [
+    3484,
+    1509,
+    2140,
+    2068,
+    3831,
+    1317,
+    606,
+    746,
+    47
+   ],
+   "valid_per_frame_ci95": [
+    0.004115373097378334,
+    0.01708480345141917
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1",
+   "snr_ib_db": 0.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 1209,
+    "beacon": 5,
+    "response": 1
+   },
+   "pre": 1215,
+   "valid": 6,
+   "valid_ids": [
+    95,
+    4026,
+    2231,
+    623,
+    2221,
+    2432
+   ],
+   "valid_per_frame_ci95": [
+    0.002201894253490851,
+    0.013059474022518683
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1",
+   "snr_ib_db": 0.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 1211,
+    "beacon": 3,
+    "response": 1
+   },
+   "pre": 1215,
+   "valid": 4,
+   "valid_ids": [
+    3172,
+    1192,
+    2616,
+    2715
+   ],
+   "valid_per_frame_ci95": [
+    0.001089865373626325,
+    0.010241588675403696
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1",
+   "snr_ib_db": -10.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 15
+   },
+   "pre": 15,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1",
+   "snr_ib_db": -10.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 15
+   },
+   "pre": 15,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E3",
+   "snr_ib_db": 20.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 931,
+    "beacon": 5
+   },
+   "pre": 936,
+   "valid": 5,
+   "valid_ids": [
+    1594,
+    918,
+    501,
+    1806,
+    1016
+   ],
+   "valid_per_frame_ci95": [
+    0.0016234863901184204,
+    0.01166833207932267
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E3",
+   "snr_ib_db": 20.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 930,
+    "beacon": 4,
+    "response": 2
+   },
+   "pre": 936,
+   "valid": 6,
+   "valid_ids": [
+    1997,
+    661,
+    485,
+    592,
+    84,
+    3587
+   ],
+   "valid_per_frame_ci95": [
+    0.002201894253490851,
+    0.013059474022518683
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E3",
+   "snr_ib_db": 0.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 1273,
+    "beacon": 3,
+    "response": 1
+   },
+   "pre": 1277,
+   "valid": 4,
+   "valid_ids": [
+    2166,
+    4094,
+    894,
+    146
+   ],
+   "valid_per_frame_ci95": [
+    0.001089865373626325,
+    0.010241588675403696
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E3",
+   "snr_ib_db": 0.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 1271,
+    "beacon": 5,
+    "response": 1
+   },
+   "pre": 1277,
+   "valid": 6,
+   "valid_ids": [
+    1895,
+    3486,
+    45,
+    711,
+    2217,
+    2515
+   ],
+   "valid_per_frame_ci95": [
+    0.002201894253490851,
+    0.013059474022518683
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E3",
+   "snr_ib_db": -10.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 23
+   },
+   "pre": 23,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E3",
+   "snr_ib_db": -10.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 23
+   },
+   "pre": 23,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1E3",
+   "snr_ib_db": 20.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 894,
+    "beacon": 5
+   },
+   "pre": 899,
+   "valid": 5,
+   "valid_ids": [
+    2180,
+    1818,
+    1835,
+    2631,
+    1700
+   ],
+   "valid_per_frame_ci95": [
+    0.0016234863901184204,
+    0.01166833207932267
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1E3",
+   "snr_ib_db": 20.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 889,
+    "beacon": 8,
+    "response": 2
+   },
+   "pre": 899,
+   "valid": 10,
+   "valid_ids": [
+    954,
+    2246,
+    3284,
+    937,
+    340,
+    2762,
+    3780,
+    1694,
+    3776,
+    230
+   ],
+   "valid_per_frame_ci95": [
+    0.004795388696132433,
+    0.018390356042017778
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1E3",
+   "snr_ib_db": 0.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 1340,
+    "beacon": 5
+   },
+   "pre": 1345,
+   "valid": 5,
+   "valid_ids": [
+    4017,
+    1419,
+    3787,
+    3195,
+    510
+   ],
+   "valid_per_frame_ci95": [
+    0.0016234863901184204,
+    0.01166833207932267
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1E3",
+   "snr_ib_db": 0.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 1341,
+    "beacon": 1,
+    "response": 3
+   },
+   "pre": 1345,
+   "valid": 4,
+   "valid_ids": [
+    235,
+    3453,
+    3853,
+    286
+   ],
+   "valid_per_frame_ci95": [
+    0.001089865373626325,
+    0.010241588675403696
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1E3",
+   "snr_ib_db": -10.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 26
+   },
+   "pre": 26,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1E3",
+   "snr_ib_db": -10.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 26
+   },
+   "pre": 26,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1s",
+   "snr_ib_db": 20.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 347
+   },
+   "pre": 347,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1s",
+   "snr_ib_db": 20.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 346,
+    "beacon": 1
+   },
+   "pre": 347,
+   "valid": 1,
+   "valid_ids": [
+    296
+   ],
+   "valid_per_frame_ci95": [
+    2.5317807984289875e-05,
+    0.005571643390938898
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1s",
+   "snr_ib_db": 0.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 528,
+    "beacon": 2,
+    "response": 2
+   },
+   "pre": 532,
+   "valid": 4,
+   "valid_ids": [
+    3248,
+    1796,
+    1790,
+    2749
+   ],
+   "valid_per_frame_ci95": [
+    0.001089865373626325,
+    0.010241588675403696
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1s",
+   "snr_ib_db": 0.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 530,
+    "beacon": 2
+   },
+   "pre": 532,
+   "valid": 2,
+   "valid_ids": [
+    962,
+    4032
+   ],
+   "valid_per_frame_ci95": [
+    0.00024220927854396495,
+    0.007224687667723959
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1s",
+   "snr_ib_db": -10.0,
+   "css_mode": "energy",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 18
+   },
+   "pre": 18,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "v0rx",
+   "wave": "v1-E1s",
+   "snr_ib_db": -10.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "crc_fail": 18
+   },
+   "pre": 18,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "b1rx",
+   "wave": "v0",
+   "snr_ib_db": 20.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "pre": 1317,
+    "v1-E1|rs|t2": 199,
+    "v1-E1|rs|t1": 3,
+    "v1-E3|crc_p1|t0": 7,
+    "v1-E1E3|rs|t2": 204
+   },
+   "pre": 1317,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "b1rx",
+   "wave": "v0",
+   "snr_ib_db": 0.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "pre": 1028,
+    "v1-E1|rs|t2": 147,
+    "v1-E1|rs|t1": 4,
+    "v1-E3|crc_p1|t0": 5,
+    "v1-E1E3|rs|t2": 131
+   },
+   "pre": 1028,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  },
+  {
+   "direction": "b1rx",
+   "wave": "v0",
+   "snr_ib_db": -10.0,
+   "css_mode": "coherent",
+   "frames": 1000,
+   "kinds": {
+    "pre": 16,
+    "v1-E1|rs|t2": 3,
+    "v1-E1|rs|t1": 0,
+    "v1-E3|crc_p1|t0": 0,
+    "v1-E1E3|rs|t2": 4
+   },
+   "pre": 16,
+   "valid": 0,
+   "valid_ids": [],
+   "valid_per_frame_ci95": [
+    0.0,
+    0.0036888794541139356
+   ]
+  }
+ ]
+}
