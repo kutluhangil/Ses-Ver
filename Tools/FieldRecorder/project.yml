@@ -1,0 +1,31 @@
+# Ses Ver · FieldRecorder (F0-4 saha ses kaydı aracı, iç kullanım)
+# Kurulum: brew install xcodegen && cd Tools/FieldRecorder && xcodegen   →  FieldRecorder.xcodeproj
+name: FieldRecorder
+options:
+  bundleIdPrefix: com.example.sesver
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    DEVELOPMENT_TEAM: ""                       # ← 10 haneli Team ID
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    TARGETED_DEVICE_FAMILY: "1"
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: NO
+    DEVELOPMENT_LANGUAGE: tr
+    CURRENT_PROJECT_VERSION: "1"
+    MARKETING_VERSION: "0.1"
+targets:
+  FieldRecorder:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Info.plist
+        buildPhase: none
+    settings:
+      base:
+        INFOPLIST_FILE: Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.sesver.tools.fieldrecorder   # ← kendi önekiniz
