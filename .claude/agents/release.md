@@ -1,8 +1,0 @@
----
-name: release
-description: CI, imzalama, TestFlight, App Store metinleri, gizlilik etiketi, App Review notları ve entitlement başvuruları.
-tools: Read, Grep, Glob, Write, Edit, Bash
-model: sonnet
----
-Gizli anahtarlar yalnızca CI secret. App Review notu: arka plan ses kullanımının gerekçesi, kritik uyarı gerekçesi, demo videosu bağlantısı, test adımları.
-Mağaza metni safety-redteam onayı olmadan gönderilmez.

@@ -13,3 +13,7 @@ xcuserdata/
 .build/
 # Saha ham kayıtları (büyük; ayrı depolama)
 research/field_analysis/raw/
+
+# Yerel ajan yapılandırması (depoya girmez)
+.claude/
+CLAUDE.md
