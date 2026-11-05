@@ -37,3 +37,7 @@ targets:
         product: DeviceServices
       - package: SesVerPackages
         product: DesignSystem
+      - package: SesVerPackages
+        product: DetectorKit
+      - package: SesVerPackages
+        product: LocalizationKit

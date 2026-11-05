@@ -18,3 +18,10 @@ research/field_analysis/raw/
 # Yerel ajan yapılandırması (depoya girmez)
 .claude/
 CLAUDE.md
+
+# Android
+.gradle/
+**/build/
+local.properties
+*.apk
+*.aab

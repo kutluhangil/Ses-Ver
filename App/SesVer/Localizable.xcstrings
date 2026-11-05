@@ -1,630 +1,1094 @@
 {
-  "sourceLanguage" : "tr",
-  "strings" : {
-    "beacon.call112" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Call 112"
+  "sourceLanguage": "tr",
+  "strings": {
+    "beacon.call112": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Call 112"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "112'yi ara"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "112'yi ara"
           }
         }
       }
     },
-    "beacon.call112.sub" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "If there's signal"
+    "beacon.call112.sub": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If there's signal"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Şebeke varsa"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şebeke varsa"
           }
         }
       }
     },
-    "beacon.chip.battery" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Battery %lld%%"
+    "beacon.chip.battery": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Battery %lld%%"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pil %%%lld"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pil %%%lld"
           }
         }
       }
     },
-    "beacon.chip.chain" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Backup · %lld h"
+    "beacon.chip.chain": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup · %lld h"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yedek · %lld sa"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yedek · %lld sa"
           }
         }
       }
     },
-    "beacon.chip.volume" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Volume %lld%%"
+    "beacon.chip.volume": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volume %lld%%"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ses %%%lld"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ses %%%lld"
           }
         }
       }
     },
-    "beacon.here.body" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tap now and then. Rescuers with the app can see you're awake."
+    "beacon.here.body": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tap now and then. Rescuers with the app can see you're awake."
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ara sıra dokunun. Uygulaması olan kurtarıcılar uyanık olduğunuzu görebilir."
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ara sıra dokunun. Uygulaması olan kurtarıcılar uyanık olduğunuzu görebilir."
           }
         }
       }
     },
-    "beacon.here.last" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "last touch: %@"
+    "beacon.here.last": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "last touch: %@"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "son dokunuş: %@"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "son dokunuş: %@"
           }
         }
       }
     },
-    "beacon.here.now" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "just now"
+    "beacon.here.now": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "just now"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "şimdi"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "şimdi"
           }
         }
       }
     },
-    "beacon.here.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "I'm here"
+    "beacon.here.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I'm here"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buradayım"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buradayım"
           }
         }
       }
     },
-    "beacon.injured" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Someone is hurt"
+    "beacon.injured": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Someone is hurt"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yaralı var"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaralı var"
           }
         }
       }
     },
-    "beacon.mute5" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mute for 5 min"
+    "beacon.mute5": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mute for 5 min"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "5 dk sessize al"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 dk sessize al"
           }
         }
       }
     },
-    "beacon.muted" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Muted"
+    "beacon.muted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muted"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sessizde"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sessizde"
           }
         }
       }
     },
-    "beacon.next" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "next whistle: %lld s"
+    "beacon.next": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "next whistle: %lld s"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "sonraki ıslık: %lld sn"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sonraki ıslık: %lld sn"
           }
         }
       }
     },
-    "beacon.people.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "How many of you?"
+    "beacon.people.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "How many of you?"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kaç kişisiniz?"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaç kişisiniz?"
           }
         }
       }
     },
-    "beacon.placement" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Place the phone face up, toward an opening, an arm's length away."
+    "beacon.placement": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Place the phone face up, toward an opening, an arm's length away."
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Telefonu ekranı yukarı bakacak şekilde, açıklığa doğru ve bir kol boyu uzağa koyun."
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonu ekranı yukarı bakacak şekilde, açıklığa doğru ve bir kol boyu uzağa koyun."
           }
         }
       }
     },
-    "beacon.stop" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hold 3 s to stop"
+    "beacon.stop": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold 3 s to stop"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Durdurmak için 3 sn basılı tutun"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durdurmak için 3 sn basılı tutun"
           }
         }
       }
     },
-    "beacon.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Signal is on"
+    "beacon.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signal is on"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sinyal veriliyor"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinyal veriliyor"
           }
         }
       }
     },
-    "prep.action.on" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hold it to start the signal"
+    "prep.action.on": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold it to start the signal"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Basılı tutun, işaret başlar"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basılı tutun, işaret başlar"
           }
         }
       }
     },
-    "prep.action.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Action button"
+    "prep.action.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Action button"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Eylem Düğmesi"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eylem Düğmesi"
           }
         }
       }
     },
-    "prep.card.body" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start the signal with one tap. Holding the Action button also starts it."
+    "prep.card.body": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start the signal with one tap. Holding the Action button also starts it."
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İşareti tek dokunuşla başlatın. Eylem Düğmesi'ne basılı tutmak da başlatır."
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşareti tek dokunuşla başlatın. Eylem Düğmesi'ne basılı tutmak da başlatır."
           }
         }
       }
     },
-    "prep.card.cta" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Start signal"
+    "prep.card.cta": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start signal"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İşareti başlat"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşareti başlat"
           }
         }
       }
     },
-    "prep.counter" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld / %lld ready"
+    "prep.counter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld ready"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld / %lld hazır"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld hazır"
           }
         }
       }
     },
-    "prep.critical.cta" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Turn on"
+    "prep.critical.cta": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn on"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aç"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aç"
           }
         }
       }
     },
-    "prep.critical.off" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Off. If the app closes, it won't sound in silent mode."
+    "prep.critical.off": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off. If the app closes, it won't sound in silent mode."
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kapalı. Uygulama kapanırsa sessiz modda duyulmaz."
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kapalı. Uygulama kapanırsa sessiz modda duyulmaz."
           }
         }
       }
     },
-    "prep.critical.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Critical alert permission"
+    "prep.critical.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical alert permission"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kritik uyarı izni"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritik uyarı izni"
           }
         }
       }
     },
-    "prep.medical.sub" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fill it in the Health app"
+    "prep.medical.sub": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fill it in the Health app"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sağlık uygulamasında doldurun"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sağlık uygulamasında doldurun"
           }
         }
       }
     },
-    "prep.medical.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Medical ID"
+    "prep.medical.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medical ID"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tıbbi Kimlik"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tıbbi Kimlik"
           }
         }
       }
     },
-    "prep.test.cta" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Test the signal for 5 s"
+    "prep.test.cta": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Test the signal for 5 s"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sinyali 5 sn dene"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinyali 5 sn dene"
           }
         }
       }
     },
-    "prep.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ready check"
+    "prep.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ready check"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hazırlık"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hazırlık"
           }
         }
       }
     },
-    "prep.volume.low" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld%% · Turn it all the way up"
+    "prep.volume.low": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%% · Turn it all the way up"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%%%lld · Sonuna kadar açın"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%%%lld · Sonuna kadar açın"
           }
         }
       }
     },
-    "prep.volume.ok" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld%%"
+    "prep.volume.ok": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld%%"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%%%lld"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%%%lld"
           }
         }
       }
     },
-    "prep.volume.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Volume"
+    "prep.volume.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volume"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ses düzeyi"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ses düzeyi"
           }
         }
       }
     },
-    "prep.whistle.sub" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "This app doesn't replace a whistle."
+    "prep.whistle.sub": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This app doesn't replace a whistle."
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bu uygulama düdüğün yerini tutmaz."
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu uygulama düdüğün yerini tutmaz."
           }
         }
       }
     },
-    "prep.whistle.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A real whistle"
+    "prep.whistle.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A real whistle"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gerçek bir düdük"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerçek bir düdük"
           }
         }
       }
     },
-    "test.countdown" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld s"
+    "test.countdown": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld s"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld sn"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld sn"
           }
         }
       }
     },
-    "test.no" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No"
+    "test.no": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hayır"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hayır"
           }
         }
       }
     },
-    "test.question" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Did you hear it?"
+    "test.question": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Did you hear it?"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Duydunuz mu?"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duydunuz mu?"
           }
         }
       }
     },
-    "test.title" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Testing the signal"
+    "test.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Testing the signal"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sinyal deneniyor"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinyal deneniyor"
           }
         }
       }
     },
-    "test.yes" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yes, I heard it"
+    "test.yes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes, I heard it"
           }
         },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Evet, duydum"
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Evet, duydum"
+          }
+        }
+      }
+    },
+    "mode.victim": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beacon"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşaret"
+          }
+        }
+      }
+    },
+    "mode.rescuer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rescuer (Listen)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurtarıcı (Dinle)"
+          }
+        }
+      }
+    },
+    "listen.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listen"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dinle"
+          }
+        }
+      }
+    },
+    "listen.status": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listening · noise %lld dB(A)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dinleniyor · gürültü %lld dB(A)"
+          }
+        }
+      }
+    },
+    "listen.silence.cta": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Silence"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sessizlik"
+          }
+        }
+      }
+    },
+    "listen.silence.sub": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 s focused listening"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 sn odaklı dinleme"
+          }
+        }
+      }
+    },
+    "listen.nearby": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signals heard"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duyulan işaretler"
+          }
+        }
+      }
+    },
+    "listen.empty": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No signals yet. Listen again during a silence."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz işaret yok. Sessizlik ilan edildiğinde tekrar dinleyin."
+          }
+        }
+      }
+    },
+    "card.people": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld people"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld kişi"
+          }
+        }
+      }
+    },
+    "card.people.atleast1": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≥ 1 person"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≥ 1 kişi"
+          }
+        }
+      }
+    },
+    "card.people.4plus": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4+ people"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "4+ kişi"
+          }
+        }
+      }
+    },
+    "card.injured": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Injured"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaralı var"
+          }
+        }
+      }
+    },
+    "card.lastTouch.range": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last touch %@ ago"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son dokunuş %@ önce"
+          }
+        }
+      }
+    },
+    "card.lastTouch.unknown": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last touch unknown"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son dokunuş bilinmiyor"
+          }
+        }
+      }
+    },
+    "card.heard": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "heard %lld s ago"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld sn önce duyuldu"
+          }
+        }
+      }
+    },
+    "card.confirming": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confirming…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doğrulanıyor…"
+          }
+        }
+      }
+    },
+    "card.confirming.sub": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One whistle heard. Waiting for a second."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir ıslık duyuldu. İkinci ıslık bekleniyor."
+          }
+        }
+      }
+    },
+    "card.battery": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Battery %lld–%lld%%"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pil %%%lld–%lld"
+          }
+        }
+      }
+    },
+    "silence.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Silence"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sessizlik"
+          }
+        }
+      }
+    },
+    "silence.countdown": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld s"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld sn"
+          }
+        }
+      }
+    },
+    "silence.heard": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld whistles heard"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld ıslık duyuldu"
+          }
+        }
+      }
+    },
+    "silence.none": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No whistles in this window."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu sürede ıslık duyulmadı."
+          }
+        }
+      }
+    },
+    "silence.end": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bitir"
+          }
+        }
+      }
+    },
+    "hc.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signal Strength"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sinyal Gücü"
+          }
+        }
+      }
+    },
+    "hc.ar": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show on AR map"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AR haritasında göster"
+          }
+        }
+      }
+    },
+    "ar.title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AR Heatmap"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AR Güç Haritası"
+          }
+        }
+      }
+    },
+    "ar.experimental": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EXPERIMENTAL"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DENEYSEL"
+          }
+        }
+      }
+    },
+    "ar.samples": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samples"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ölçüm"
+          }
+        }
+      }
+    },
+    "ar.mark": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mark area"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bölgeyi işaretle"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

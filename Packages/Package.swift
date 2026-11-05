@@ -32,7 +32,7 @@ let package = Package(
         ),
         .testTarget(
             name: "DetectorKitTests",
-            dependencies: ["DetectorKit", "BeaconKit"],
+            dependencies: ["DetectorKit", "BeaconKit", "LocalizationKit"],
             path: "Tests/DetectorKitTests"
         ),
         .target(

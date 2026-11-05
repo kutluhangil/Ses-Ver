@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ses Ver</string>
+    <string name="tile_name">Ses Ver</string>
+    <string name="notification_channel_name">Deprem Akustik İşareti</string>
+    <string name="notification_channel_desc">Enkaz altında sesli işaret yayımı</string>
+    <string name="notification_title">Ses Ver İşareti Aktif</string>
+    <string name="notification_text">Telefon akustik düdük çalıyor · Ekranı kapatabilirsiniz</string>
+    <string name="btn_start">"SES VER\'İ BAŞLAT"</string>
+    <string name="btn_stop">DURDURMAK İÇİN BASILI TUTUN</string>
+    <string name="btn_here">BURADAYIM</string>
+    <string name="whistle_sub">Yakındaki gerçek bir düdüğü tercih edin.</string>
+</resources>
