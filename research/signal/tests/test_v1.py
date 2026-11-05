@@ -4,7 +4,7 @@ import numpy as np
 import pytest
 
 from sesver_signal import V0, Fields, ReceiverConfig, decode_buffer, frame_from_word, pack, rs16
-from sesver_signal.v1 import (CODING, V1_E1, V1_E1E3, V1_E1S, V1_E3, FieldsP1, V1Receiver, decode_metrics,
+from sesver_signal.v1 import (CODING, V1, V1_E1, V1_E1E3, V1_E1S, V1_E3, FieldsP1, V1Receiver, decode_metrics,
                               frame_v1, pack_p1, unpack_p1)
 
 
@@ -74,7 +74,7 @@ def test_p1_pack_roundtrip():
         pack_p1(FieldsP1(id=0xFFF))
 
 
-@pytest.mark.parametrize("p", [V1_E1, V1_E3, V1_E1E3, V1_E1S])
+@pytest.mark.parametrize("p", [V1, V1_E1, V1_E3, V1_E1E3, V1_E1S])
 def test_v1_frame_clean_decode(p):
     rng = np.random.default_rng(5)
     d = pack_p1(FieldsP1(id=0x1A3, people=3, injured=1, life_age=4, battery=2, mode=0))
@@ -87,6 +87,31 @@ def test_v1_frame_clean_decode(p):
     assert near
     dec = decode_metrics(near[0].e_coh[p.name], CODING[p.name])
     assert dec.ok and dec.data == d
+
+
+def test_rs_erasure_decoding():
+    rng = np.random.default_rng(7)
+    for _ in range(500):
+        cw = rs16.encode([int(x) for x in rng.integers(0, 16, 6)])
+        r = list(cw)
+        # 1-3 erasures
+        e_cnt = int(rng.integers(1, 4))
+        erasures = [int(x) for x in rng.choice(10, e_cnt, replace=False)]
+        for p in erasures:
+            r[p] = int(rng.integers(0, 16))  # bozuk/bilinmeyen
+        ok, out, _ = rs16.decode_erasures(r, erasures, t_max=0)
+        assert ok and out == cw
+
+    # 1 erasure + 1 error (2*1 + 1 = 3 <= 4)
+    for _ in range(300):
+        cw = rs16.encode([int(x) for x in rng.integers(0, 16, 6)])
+        r = list(cw)
+        er = int(rng.integers(0, 10))
+        err = int((er + rng.integers(1, 10)) % 10)
+        r[er] = int(rng.integers(0, 16))
+        r[err] ^= int(rng.integers(1, 16))
+        ok, out, _ = rs16.decode_erasures(r, [er], t_max=1)
+        assert ok and out == cw
 
 
 def test_v1receiver_energy_matches_v0_receiver():

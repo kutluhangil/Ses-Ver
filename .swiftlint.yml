@@ -1,0 +1,27 @@
+disabled_rules:
+  - trailing_whitespace
+  - identifier_name
+  - line_length
+  - type_body_length
+  - file_length
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - redundant_nil_coalescing
+
+included:
+  - Spikes
+  - Tools
+  - Packages
+
+excluded:
+  - .build
+  - DerivedData
+  - research
+  - Spikes/SesVerSpikes.xcodeproj
+  - Tools/FieldRecorder/FieldRecorder.xcodeproj
+
+analyzer_rules:
+  - unused_import

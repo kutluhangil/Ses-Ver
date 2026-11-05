@@ -1,0 +1,64 @@
+{
+  "name": "id_7F2",
+  "spec": "SignalSpec v1",
+  "variant": "v1",
+  "fs": 48000,
+  "fields": {
+    "id": 2034,
+    "id_hex": "0x7F2",
+    "people": 4,
+    "injured": 1,
+    "lifeAge": 2,
+    "battery": 2,
+    "mode": 0
+  },
+  "data24_hex": "0x7F2928",
+  "nibbles": [
+    7,
+    15,
+    2,
+    9,
+    2,
+    8,
+    13,
+    1,
+    13,
+    14
+  ],
+  "shifts": [
+    5,
+    10,
+    3,
+    14,
+    3,
+    15,
+    9,
+    1,
+    9,
+    11
+  ],
+  "samples": {
+    "file": "id_7F2.f32",
+    "format": "float32 little-endian, mono",
+    "count": 60672,
+    "amplitude": 0.8912509381337456,
+    "outputGain": 1.0,
+    "sha256": "d8e8432591c9364b79195c79dc9fb4e97e0ef6c3ce74774f608b5ee358a7b249",
+    "peak_abs": 0.8912509083747864,
+    "rms": 0.5530830423835095,
+    "first8": [
+      0.0,
+      5.973290171823464e-06,
+      4.720320430351421e-05,
+      0.00015604389773216099,
+      0.00035917089553549886,
+      0.0006750946049578488,
+      0.0011121011339128017,
+      0.0016667372547090054
+    ]
+  },
+  "tolerance": {
+    "bits_rs_nibbles_shifts": "exact",
+    "waveform_abs_max": 0.0001
+  }
+}

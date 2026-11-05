@@ -161,7 +161,7 @@ final class Scanner: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
                 p.delegate = self
                 SpikeLog.shared.log("ble_first_seen", [("id", id.uuidString), ("rssi", "\(rssi)"), ("name", name),
                                                        ("svcInMain", "\(inMain)"), ("svcInOverflow", "\(inOverflow)")])
-                if readOnConnect { central.connect(p) }
+                if readOnConnect { self.central?.connect(p) }
             }
             // Her keşfi loglamak çok gürültülü; RSSI özetini kalp atışı yazar. Ad/alan değişimi yine loglanır.
             SpikeLog.shared.log("ble_seen", [("id", String(id.uuidString.prefix(8))), ("rssi", "\(rssi)"),

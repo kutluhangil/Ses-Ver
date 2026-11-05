@@ -1,0 +1,394 @@
+{
+  "spec": "SignalSpec v1",
+  "contract": "docs/contracts/signal-v1.md",
+  "frame_len": 60672,
+  "on_len": 49152,
+  "count": 55,
+  "vectors": [
+    {
+      "name": "min_all",
+      "data24_hex": "0x001000",
+      "json": "min_all.json",
+      "f32": "min_all.f32",
+      "sha256": "e31567d44a360053151658780cbff5a40739b29907414d81a1f6669a209de602"
+    },
+    {
+      "name": "max_all",
+      "data24_hex": "0xFFEFFF",
+      "json": "max_all.json",
+      "f32": "max_all.f32",
+      "sha256": "403a7786a33eea4f041de8ad6a356337a48b1bc9886442c9d8e0c5225b5aed77"
+    },
+    {
+      "name": "mode_0",
+      "data24_hex": "0x7F2238",
+      "json": "mode_0.json",
+      "f32": "mode_0.f32",
+      "sha256": "beb99a65d85d607ee2bd8160997872df58916e4bc1b34b811edbeed587a7ca23"
+    },
+    {
+      "name": "mode_1",
+      "data24_hex": "0x7F2239",
+      "json": "mode_1.json",
+      "f32": "mode_1.f32",
+      "sha256": "81b26b3ce6f0c7ed7bb2307320326ad39c37c001a4ffb596f3b7dfea8296d9d4"
+    },
+    {
+      "name": "mode_2",
+      "data24_hex": "0x7F223A",
+      "json": "mode_2.json",
+      "f32": "mode_2.f32",
+      "sha256": "34a074d58fc5943c66552cdf30539413559f36b62f9156fbe11658f48a560bfe"
+    },
+    {
+      "name": "mode_3",
+      "data24_hex": "0x7F223B",
+      "json": "mode_3.json",
+      "f32": "mode_3.f32",
+      "sha256": "27733143195e0717c8c5c66f0ffbe28abddd6a42572e4c211f7fae73f30c8d54"
+    },
+    {
+      "name": "lifeage_00",
+      "data24_hex": "0x7F210C",
+      "json": "lifeage_00.json",
+      "f32": "lifeage_00.f32",
+      "sha256": "ec65b4796168fc5342d932f56f683503c55348a5790a83674e2ea2b0a72d8878"
+    },
+    {
+      "name": "lifeage_01",
+      "data24_hex": "0x7F211C",
+      "json": "lifeage_01.json",
+      "f32": "lifeage_01.f32",
+      "sha256": "ca0e78640f38f2029ec7384191678960fe3e3cd2fe0c9ca16a89d753e96e9fc4"
+    },
+    {
+      "name": "lifeage_02",
+      "data24_hex": "0x7F212C",
+      "json": "lifeage_02.json",
+      "f32": "lifeage_02.f32",
+      "sha256": "00de8bfec8f702c27e02bdc7418eb908fbf2d83f6231b8244fcebf0fddf82159"
+    },
+    {
+      "name": "lifeage_03",
+      "data24_hex": "0x7F213C",
+      "json": "lifeage_03.json",
+      "f32": "lifeage_03.f32",
+      "sha256": "8e10cbbac4cba8b8b1faff6b8c20922ed1d705d2776ad5ccc027cb7c4bbdc5c7"
+    },
+    {
+      "name": "lifeage_04",
+      "data24_hex": "0x7F214C",
+      "json": "lifeage_04.json",
+      "f32": "lifeage_04.f32",
+      "sha256": "33ebe54aa1c8d0baf9f6019a61ed6c8c24607ad3805a6b381eb1467f4a8ec1f2"
+    },
+    {
+      "name": "lifeage_05",
+      "data24_hex": "0x7F215C",
+      "json": "lifeage_05.json",
+      "f32": "lifeage_05.f32",
+      "sha256": "5f384a77b57e13552437c1cc7976fd46d95517d10bbc08b7c82a3ff30d3b9c65"
+    },
+    {
+      "name": "lifeage_06",
+      "data24_hex": "0x7F216C",
+      "json": "lifeage_06.json",
+      "f32": "lifeage_06.f32",
+      "sha256": "327372b85ae7012de05303e4d9aeb7e17a04be8d46ab37db4cf45f1df0c5ab30"
+    },
+    {
+      "name": "lifeage_07",
+      "data24_hex": "0x7F217C",
+      "json": "lifeage_07.json",
+      "f32": "lifeage_07.f32",
+      "sha256": "8e9921697fd9d751e00815bd9b1512042c7aaa35879b1c7a0e1c97e639df628d"
+    },
+    {
+      "name": "lifeage_08",
+      "data24_hex": "0x7F218C",
+      "json": "lifeage_08.json",
+      "f32": "lifeage_08.f32",
+      "sha256": "cb536e7b15d8e81e4e3716c1a97ae74246536dd9c986baa5f214d53aa7341049"
+    },
+    {
+      "name": "lifeage_09",
+      "data24_hex": "0x7F219C",
+      "json": "lifeage_09.json",
+      "f32": "lifeage_09.f32",
+      "sha256": "00e3b3c93d91803af7faf1c75342a0fd505c896dca1d9f7bd1b79208fe40ab2d"
+    },
+    {
+      "name": "lifeage_10",
+      "data24_hex": "0x7F21AC",
+      "json": "lifeage_10.json",
+      "f32": "lifeage_10.f32",
+      "sha256": "916a365dcf801e4c81ceb985b1f31dde6953540921a754cbf4830110270d89bc"
+    },
+    {
+      "name": "lifeage_11",
+      "data24_hex": "0x7F21BC",
+      "json": "lifeage_11.json",
+      "f32": "lifeage_11.f32",
+      "sha256": "8acf44d5dfd605e0266d67f943479912dbebca292a01442412cae049d2ae9486"
+    },
+    {
+      "name": "lifeage_12",
+      "data24_hex": "0x7F21CC",
+      "json": "lifeage_12.json",
+      "f32": "lifeage_12.f32",
+      "sha256": "ef5da504f0d7bb54ba8d2c9f6f4845e54dcbe844ad4a0ac1effd48cc42c0223f"
+    },
+    {
+      "name": "lifeage_13",
+      "data24_hex": "0x7F21DC",
+      "json": "lifeage_13.json",
+      "f32": "lifeage_13.f32",
+      "sha256": "0c3cf8f3dfffc953b1771acdeff5bf770906dfc8546727311cdf984208b277c0"
+    },
+    {
+      "name": "lifeage_14",
+      "data24_hex": "0x7F21EC",
+      "json": "lifeage_14.json",
+      "f32": "lifeage_14.f32",
+      "sha256": "0c530c775cb75785fe17224a476752aa58b94863a797c271e0928d866d50a921"
+    },
+    {
+      "name": "lifeage_15",
+      "data24_hex": "0x7F21FC",
+      "json": "lifeage_15.json",
+      "f32": "lifeage_15.f32",
+      "sha256": "861628723cecc8cdb9c044d18bff9fdc6f4691390bc4d7a3f0396cd84c762985"
+    },
+    {
+      "name": "id_7F2",
+      "data24_hex": "0x7F2928",
+      "json": "id_7F2.json",
+      "f32": "id_7F2.f32",
+      "sha256": "d8e8432591c9364b79195c79dc9fb4e97e0ef6c3ce74774f608b5ee358a7b249"
+    },
+    {
+      "name": "random_00",
+      "data24_hex": "0xCBDDFF",
+      "json": "random_00.json",
+      "f32": "random_00.f32",
+      "sha256": "367dc354099e4b5a21cc73737c3184325e859bdc1372faf917e334f0384ab2be"
+    },
+    {
+      "name": "random_01",
+      "data24_hex": "0xF15890",
+      "json": "random_01.json",
+      "f32": "random_01.f32",
+      "sha256": "0cbb52f05e4306e042333caefeede0e954920631e3190dbf7097ef6f451f6ade"
+    },
+    {
+      "name": "random_02",
+      "data24_hex": "0x344132",
+      "json": "random_02.json",
+      "f32": "random_02.f32",
+      "sha256": "3eac99768732164c7df8ad6dddb41a45b1c75451372db8a3e1b00060716be3df"
+    },
+    {
+      "name": "random_03",
+      "data24_hex": "0xC97C67",
+      "json": "random_03.json",
+      "f32": "random_03.f32",
+      "sha256": "57f4fb53509c9017856672a36782df7f9da193d282e9ca8afa0e7bc1dea04974"
+    },
+    {
+      "name": "random_04",
+      "data24_hex": "0x862895",
+      "json": "random_04.json",
+      "f32": "random_04.f32",
+      "sha256": "a7864445835ee3bcba5100f97ed161279781e84eff2ca5539b14723c3f3a9606"
+    },
+    {
+      "name": "random_05",
+      "data24_hex": "0x3D1461",
+      "json": "random_05.json",
+      "f32": "random_05.f32",
+      "sha256": "f803face9d1a9061858c24756594aa8fb65bd99ec171bb6415beb0a429cc70f8"
+    },
+    {
+      "name": "random_06",
+      "data24_hex": "0xD32BD3",
+      "json": "random_06.json",
+      "f32": "random_06.f32",
+      "sha256": "6913a6fdbc640a68fcd0fbb6b28e95a1e3f51c9f32dd0461ee247d21e5c0ce93"
+    },
+    {
+      "name": "random_07",
+      "data24_hex": "0xC23C05",
+      "json": "random_07.json",
+      "f32": "random_07.f32",
+      "sha256": "e4232afcacf29668fd51e8499993d99e6275ce51edf40df7fba5852e36044d57"
+    },
+    {
+      "name": "random_08",
+      "data24_hex": "0x9F4A07",
+      "json": "random_08.json",
+      "f32": "random_08.f32",
+      "sha256": "45e4680368b98c3fadef2d3aec15003544887449fe2bce08947d1f905e74bcbb"
+    },
+    {
+      "name": "random_09",
+      "data24_hex": "0x37516D",
+      "json": "random_09.json",
+      "f32": "random_09.f32",
+      "sha256": "9b8e85f713ad7761a2b1ad1823e8568c0879624774aa83d894893602d1a062fe"
+    },
+    {
+      "name": "random_10",
+      "data24_hex": "0xDFF3B1",
+      "json": "random_10.json",
+      "f32": "random_10.f32",
+      "sha256": "a5cc1c028bca9cb7fb44d39a23081cf1548d82ebf6151631ef96b04f06d6da51"
+    },
+    {
+      "name": "random_11",
+      "data24_hex": "0xB9D737",
+      "json": "random_11.json",
+      "f32": "random_11.f32",
+      "sha256": "25976fd9ec5b85490096e727d7b229f924993b89fc1d2ef137fa1acf89623500"
+    },
+    {
+      "name": "random_12",
+      "data24_hex": "0x932656",
+      "json": "random_12.json",
+      "f32": "random_12.f32",
+      "sha256": "e978fc98859749a5e345ed9b4a4070178dee78738afd693422746395e71d8487"
+    },
+    {
+      "name": "random_13",
+      "data24_hex": "0xD4FE30",
+      "json": "random_13.json",
+      "f32": "random_13.f32",
+      "sha256": "f3404e2fa9a658ec113592b910d1fa8c4d8897de593cabf37661b89c8b074bf2"
+    },
+    {
+      "name": "random_14",
+      "data24_hex": "0x336CD0",
+      "json": "random_14.json",
+      "f32": "random_14.f32",
+      "sha256": "9ba1d2ea08236da7e78572d38ac8542ddc113c4e911e9c9240c1357e164033e9"
+    },
+    {
+      "name": "random_15",
+      "data24_hex": "0x39CCFE",
+      "json": "random_15.json",
+      "f32": "random_15.f32",
+      "sha256": "0bb0ba6f3214c6e3ee933f69788434ab82f0131df3ae31e131169d47f6c7419c"
+    },
+    {
+      "name": "random_16",
+      "data24_hex": "0xEDA09B",
+      "json": "random_16.json",
+      "f32": "random_16.f32",
+      "sha256": "deab853914772c63ef3f0a7341301075b67df0c331a043f783e6f36acb2f8a0e"
+    },
+    {
+      "name": "random_17",
+      "data24_hex": "0x6DC734",
+      "json": "random_17.json",
+      "f32": "random_17.f32",
+      "sha256": "236c6af88d616919226d82245c2b43d9b9e016eeea6d4535a030f40391a9e0fa"
+    },
+    {
+      "name": "random_18",
+      "data24_hex": "0xE2CA59",
+      "json": "random_18.json",
+      "f32": "random_18.f32",
+      "sha256": "f293c903c8e6b367be32ca33e3765b903677947428deaa61801a83dd1759be9c"
+    },
+    {
+      "name": "random_19",
+      "data24_hex": "0xC05F79",
+      "json": "random_19.json",
+      "f32": "random_19.f32",
+      "sha256": "8a120ca241ffc3032ac6d54b62046e4fc91cb03555234645449bcc2d7a44ae08"
+    },
+    {
+      "name": "random_20",
+      "data24_hex": "0x76D2D6",
+      "json": "random_20.json",
+      "f32": "random_20.f32",
+      "sha256": "836326d666e5bb2780bdf3f4b0ea7888958926a758c8207ce64abd00c225f2b3"
+    },
+    {
+      "name": "random_21",
+      "data24_hex": "0xCE6580",
+      "json": "random_21.json",
+      "f32": "random_21.f32",
+      "sha256": "3adf92045648ab7d4e914b391c883b3716c61ee51a487d34f936856d0729a99d"
+    },
+    {
+      "name": "random_22",
+      "data24_hex": "0x08E0E4",
+      "json": "random_22.json",
+      "f32": "random_22.f32",
+      "sha256": "348aa5b6f0cbaf78a0646a159ef2f1f3deb9990381365883d1ea72e40f05823a"
+    },
+    {
+      "name": "random_23",
+      "data24_hex": "0x70F53D",
+      "json": "random_23.json",
+      "f32": "random_23.f32",
+      "sha256": "fd861f08e0d1d688079520faefd8cd7a21c1a17a2e94fdbea3e271e2ea736e1c"
+    },
+    {
+      "name": "random_24",
+      "data24_hex": "0xC57B70",
+      "json": "random_24.json",
+      "f32": "random_24.f32",
+      "sha256": "3f96cb6fe1a2b6ea46cdf278a3ac57faca01f9b0db0bc7b1fbde2d82f8f08199"
+    },
+    {
+      "name": "random_25",
+      "data24_hex": "0xCC8D52",
+      "json": "random_25.json",
+      "f32": "random_25.f32",
+      "sha256": "aefe4b0cd08e88d5a6de7bf2bcd54add28fd513c4252bad303fc96618e79651c"
+    },
+    {
+      "name": "random_26",
+      "data24_hex": "0x0ECC72",
+      "json": "random_26.json",
+      "f32": "random_26.f32",
+      "sha256": "2061974597312b761111b781abdf8df2375d93d80b71902d61dd13d5c188abf5"
+    },
+    {
+      "name": "random_27",
+      "data24_hex": "0x8083DE",
+      "json": "random_27.json",
+      "f32": "random_27.f32",
+      "sha256": "4d5fafa1310ccfc4c743fa062ba6e1eb1715340342a26cd67411569134be55ec"
+    },
+    {
+      "name": "random_28",
+      "data24_hex": "0x7FF2F8",
+      "json": "random_28.json",
+      "f32": "random_28.f32",
+      "sha256": "d60cb71700329f7f0f71aa37f5298430204ea98a308eea8ffd92e439883cf1c3"
+    },
+    {
+      "name": "random_29",
+      "data24_hex": "0x539AE9",
+      "json": "random_29.json",
+      "f32": "random_29.f32",
+      "sha256": "426eb200fec3ad0633facf503f68662aab21d184efe79909a4ac5badd958de62"
+    },
+    {
+      "name": "random_30",
+      "data24_hex": "0xAC190B",
+      "json": "random_30.json",
+      "f32": "random_30.f32",
+      "sha256": "18bd9097ec414c122c19ce8c89b68cd3c44c7e94a5408621e6b743c32e52f0e4"
+    },
+    {
+      "name": "random_31",
+      "data24_hex": "0xD865C7",
+      "json": "random_31.json",
+      "f32": "random_31.f32",
+      "sha256": "433b6206d733baef17f58195fc3a3a6d425557a8954d4e5e773c0e7b76cb3eb3"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+name: SesVer
+options:
+  bundleIdPrefix: com.rebuildrebreak.sesver
+  createIntermediateGroups: true
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    TARGETED_DEVICE_FAMILY: "1"
+    DEVELOPMENT_LANGUAGE: tr
+    CURRENT_PROJECT_VERSION: "1"
+    MARKETING_VERSION: "0.1.0"
+    GENERATE_INFOPLIST_FILE: NO
+
+packages:
+  SesVerPackages:
+    path: ../Packages
+
+targets:
+  SesVer:
+    type: application
+    platform: iOS
+    sources:
+      - path: SesVer
+        excludes:
+          - "Info.plist"
+    settings:
+      base:
+        INFOPLIST_FILE: SesVer/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.rebuildrebreak.sesver
+    dependencies:
+      - package: SesVerPackages
+        product: BeaconKit
+      - package: SesVerPackages
+        product: DeviceServices
+      - package: SesVerPackages
+        product: DesignSystem

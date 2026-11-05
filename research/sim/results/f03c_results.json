@@ -1,0 +1,132 @@
+{
+  "eta_c": 22.16,
+  "trials_per_point": 20,
+  "curves": {
+    "awgn": [
+      {
+        "snr_db": -24,
+        "pd": 0.95,
+        "fer_t0": 0.7,
+        "fer_t1": 0.55,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 0.4
+      },
+      {
+        "snr_db": -20,
+        "pd": 1.0,
+        "fer_t0": 0.05,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 1.0
+      },
+      {
+        "snr_db": -16,
+        "pd": 1.0,
+        "fer_t0": 0.0,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 1.0
+      },
+      {
+        "snr_db": -12,
+        "pd": 1.0,
+        "fer_t0": 0.0,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 1.0
+      },
+      {
+        "snr_db": -8,
+        "pd": 1.0,
+        "fer_t0": 0.0,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 1.0
+      }
+    ],
+    "pink": [
+      {
+        "snr_db": -24,
+        "pd": 0.6,
+        "fer_t0": 0.95,
+        "fer_t1": 0.8,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 0.0
+      },
+      {
+        "snr_db": -20,
+        "pd": 1.0,
+        "fer_t0": 0.15,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 0.95
+      },
+      {
+        "snr_db": -16,
+        "pd": 1.0,
+        "fer_t0": 0.0,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 1.0
+      },
+      {
+        "snr_db": -12,
+        "pd": 1.0,
+        "fer_t0": 0.0,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 1.0
+      },
+      {
+        "snr_db": -8,
+        "pd": 1.0,
+        "fer_t0": 0.0,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 1.0
+      }
+    ],
+    "construction": [
+      {
+        "snr_db": -24,
+        "pd": 0.7,
+        "fer_t0": 0.95,
+        "fer_t1": 0.9,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 0.05
+      },
+      {
+        "snr_db": -20,
+        "pd": 0.95,
+        "fer_t0": 0.6,
+        "fer_t1": 0.45,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 0.4
+      },
+      {
+        "snr_db": -16,
+        "pd": 1.0,
+        "fer_t0": 0.3,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 0.75
+      },
+      {
+        "snr_db": -12,
+        "pd": 1.0,
+        "fer_t0": 0.1,
+        "fer_t1": 0.1,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 0.8
+      },
+      {
+        "snr_db": -8,
+        "pd": 1.0,
+        "fer_t0": 0.1,
+        "fer_t1": 0.0,
+        "fer_erasures": 1.0,
+        "two_frame_rate": 0.95
+      }
+    ]
+  }
+}

@@ -34,9 +34,10 @@ V1_E1 = replace(V0L, name="v1-E1", n_symbols=10)
 V1_E3 = replace(V0L, name="v1-E3", n_sym=4_608)
 V1_E1E3 = replace(V0L, name="v1-E1E3", n_sym=4_608, n_symbols=10)
 V1_E1S = replace(V0L, name="v1-E1s", n_pre=4_800, n_symbols=10)
+V1 = replace(V0L, name="v1", n_pre=4_608, n_symbols=10)
 
-V1_VARIANTS = {p.name: p for p in (V1_E1, V1_E3, V1_E1E3, V1_E1S)}
-CODING = {"v0": "crc_v0", "v0-L": "crc_v0", "v1-E1": "rs", "v1-E3": "crc_p1", "v1-E1E3": "rs", "v1-E1s": "rs"}
+V1_VARIANTS = {p.name: p for p in (V1_E1, V1_E3, V1_E1E3, V1_E1S, V1)}
+CODING = {"v0": "crc_v0", "v0-L": "crc_v0", "v1-E1": "rs", "v1-E3": "crc_p1", "v1-E1E3": "rs", "v1-E1s": "rs", "v1": "rs"}
 
 
 # ------------------------------------------------------------------ P1 yükü

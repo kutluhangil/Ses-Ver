@@ -1,0 +1,64 @@
+{
+  "name": "lifeage_14",
+  "spec": "SignalSpec v1",
+  "variant": "v1",
+  "fs": 48000,
+  "fields": {
+    "id": 2034,
+    "id_hex": "0x7F2",
+    "people": 0,
+    "injured": 1,
+    "lifeAge": 14,
+    "battery": 3,
+    "mode": 0
+  },
+  "data24_hex": "0x7F21EC",
+  "nibbles": [
+    7,
+    15,
+    2,
+    1,
+    14,
+    12,
+    4,
+    0,
+    7,
+    1
+  ],
+  "shifts": [
+    5,
+    10,
+    3,
+    1,
+    11,
+    8,
+    7,
+    0,
+    5,
+    1
+  ],
+  "samples": {
+    "file": "lifeage_14.f32",
+    "format": "float32 little-endian, mono",
+    "count": 60672,
+    "amplitude": 0.8912509381337456,
+    "outputGain": 1.0,
+    "sha256": "0c530c775cb75785fe17224a476752aa58b94863a797c271e0928d866d50a921",
+    "peak_abs": 0.8912509083747864,
+    "rms": 0.5530786489597779,
+    "first8": [
+      0.0,
+      5.973290171823464e-06,
+      4.720320430351421e-05,
+      0.00015604389773216099,
+      0.00035917089553549886,
+      0.0006750946049578488,
+      0.0011121011339128017,
+      0.0016667372547090054
+    ]
+  },
+  "tolerance": {
+    "bits_rs_nibbles_shifts": "exact",
+    "waveform_abs_max": 0.0001
+  }
+}

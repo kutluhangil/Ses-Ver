@@ -1,0 +1,64 @@
+{
+  "name": "random_01",
+  "spec": "SignalSpec v1",
+  "variant": "v1",
+  "fs": 48000,
+  "fields": {
+    "id": 3861,
+    "id_hex": "0xF15",
+    "people": 4,
+    "injured": 0,
+    "lifeAge": 9,
+    "battery": 0,
+    "mode": 0
+  },
+  "data24_hex": "0xF15890",
+  "nibbles": [
+    15,
+    1,
+    5,
+    8,
+    9,
+    0,
+    5,
+    8,
+    13,
+    0
+  ],
+  "shifts": [
+    10,
+    1,
+    6,
+    15,
+    14,
+    0,
+    6,
+    15,
+    9,
+    0
+  ],
+  "samples": {
+    "file": "random_01.f32",
+    "format": "float32 little-endian, mono",
+    "count": 60672,
+    "amplitude": 0.8912509381337456,
+    "outputGain": 1.0,
+    "sha256": "0cbb52f05e4306e042333caefeede0e954920631e3190dbf7097ef6f451f6ade",
+    "peak_abs": 0.8912509083747864,
+    "rms": 0.5531061374021472,
+    "first8": [
+      0.0,
+      5.973290171823464e-06,
+      4.720320430351421e-05,
+      0.00015604389773216099,
+      0.00035917089553549886,
+      0.0006750946049578488,
+      0.0011121011339128017,
+      0.0016667372547090054
+    ]
+  },
+  "tolerance": {
+    "bits_rs_nibbles_shifts": "exact",
+    "waveform_abs_max": 0.0001
+  }
+}

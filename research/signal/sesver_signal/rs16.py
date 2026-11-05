@@ -144,6 +144,104 @@ def decode(word: list[int], t_max: int = 2) -> tuple[bool, list[int], tuple[tupl
     return True, out, pat
 
 
+def decode_erasures(
+    word: list[int], erasures: list[int], t_max: int = 0
+) -> tuple[bool, list[int], tuple[tuple[int, int], ...]]:
+    """Silinme (erasure) konumları bilinen kod sözcüğü çözücü.
+
+    2*t + e <= 4 koşulunu sağlar (d_min = 5).
+    erasures: silinmiş (güvenilmeyen) sembollerin indeksleri (0..9).
+    t_max: silinmeler dışındaki ek rastgele sembol hatası sınırı.
+    """
+    if len(word) != N:
+        raise ValueError("10 nibble gerekli")
+    er_set = sorted(set(erasures))
+    e_cnt = len(er_set)
+    if 2 * t_max + e_cnt > NPAR:
+        return False, list(word), ()
+
+    s_orig = remainder(word)
+    if s_orig == 0 and e_cnt == 0:
+        return True, list(word), ()
+
+    # e = 0: normal decode
+    if e_cnt == 0:
+        return decode(word, t_max=t_max)
+
+    # e = 1 silinme
+    if e_cnt == 1:
+        p0 = er_set[0]
+        # s_orig ^ REM[p0][v0] = s_target
+        # t = 0 için s_target = 0 => REM[p0][v0] == s_orig
+        for v0 in range(16):
+            s_rem = s_orig ^ REM[p0][v0]
+            if s_rem == 0:
+                out = list(word)
+                out[p0] ^= v0
+                return True, out, ((p0, v0),)
+            if t_max >= 1 and s_rem in ERR_TABLE:
+                pat = ERR_TABLE[s_rem]
+                if len(pat) <= t_max and all(pos != p0 for pos, _ in pat):
+                    out = list(word)
+                    out[p0] ^= v0
+                    for pos, val in pat:
+                        out[pos] ^= val
+                    corr = ((p0, v0),) + pat
+                    return True, out, corr
+        return False, list(word), ()
+
+    # e = 2 silinme
+    if e_cnt == 2:
+        p0, p1 = er_set[0], er_set[1]
+        for v0 in range(16):
+            s_partial = s_orig ^ REM[p0][v0]
+            for v1 in range(16):
+                s_rem = s_partial ^ REM[p1][v1]
+                if s_rem == 0:
+                    out = list(word)
+                    out[p0] ^= v0
+                    out[p1] ^= v1
+                    corr = tuple((pos, val) for pos, val in ((p0, v0), (p1, v1)) if val != 0)
+                    return True, out, corr
+                if t_max >= 1 and s_rem in ERR_TABLE:
+                    pat = ERR_TABLE[s_rem]
+                    if len(pat) <= t_max and all(pos not in (p0, p1) for pos, _ in pat):
+                        out = list(word)
+                        out[p0] ^= v0
+                        out[p1] ^= v1
+                        for pos, val in pat:
+                            out[pos] ^= val
+                        corr = tuple((pos, val) for pos, val in ((p0, v0), (p1, v1)) if val != 0) + pat
+                        return True, out, corr
+        return False, list(word), ()
+
+    # e in (3, 4) silinme (t_max = 0 olmalı)
+    if e_cnt <= NPAR and t_max == 0:
+        def _solve_rec(idx: int, curr_s: int, current_vals: list[int]):
+            if idx == e_cnt:
+                if curr_s == 0:
+                    return current_vals
+                return None
+            pos = er_set[idx]
+            for v in range(16):
+                res = _solve_rec(idx + 1, curr_s ^ REM[pos][v], current_vals + [v])
+                if res is not None:
+                    return res
+            return None
+
+        sol = _solve_rec(0, s_orig, [])
+        if sol is not None:
+            out = list(word)
+            corr = []
+            for pos, v in zip(er_set, sol):
+                out[pos] ^= v
+                if v != 0:
+                    corr.append((pos, v))
+            return True, out, tuple(corr)
+
+    return False, list(word), ()
+
+
 def accept_fraction_random(t_max: int) -> float:
     """Rastgele 10 nibble'lık bir sözcüğün kabul edilme olasılığı (kesin).
 
