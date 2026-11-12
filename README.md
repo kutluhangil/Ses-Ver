@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/media/hero.svg" alt="Ses Ver — an acoustic beacon under rubble and a rescuer locator" width="100%">
+<img src="docs/media/hero.svg" alt="Ses Ver — a phone under rubble sends acoustic chirps; the rescuer's phone shows the frame on a spectrogram, decodes the payload and warms up" width="100%">
 
 <p>
   <img alt="iOS" src="https://img.shields.io/badge/iOS-Swift%20%2B%20SwiftUI-ff7a1a?style=for-the-badge&labelColor=0d0705">
@@ -57,6 +57,47 @@ This is a life-safety domain, so the project is strict about what it claims:
 
 <img src="docs/media/divider.svg" width="100%" alt="">
 
+## The signal (SignalSpec v1)
+
+The beacon is a chirp-spread-spectrum frame designed to be found in noise and to carry a little data. It lives in the 1.2–3 kHz band, which also suits professional geophones and listening devices rescuers already carry.
+
+| Part | Value |
+|---|---|
+| Sample rate | 48 kHz (receivers resample if needed) |
+| Band | 1 200 – 3 000 Hz (1 800 Hz wide) |
+| Preamble | Three rising chirps of 96 ms with 80 ms gaps, then one falling sync chirp |
+| Data | Ten 64 ms CSS symbols (cyclically shifted chirps), 16-symbol alphabet = 4 bits each |
+| Error correction | Reed–Solomon RS(10, 6) over GF(16): 6 data symbols, 4 parity |
+| Frame | 1 264 ms, of which 1 024 ms is sound |
+| Windows | Half-Hann ramps (5 ms on chirps, 2 ms on symbols) to avoid clicks |
+
+The 24-bit payload, most significant bit first:
+
+| Field | Bits | Meaning |
+|---|---|---|
+| `id` | 12 | Random per activation, shown as `K-7F2` |
+| `people` | 3 | Not given · 1–6 · 7 or more |
+| `injured` | 1 | Someone is injured |
+| `lifeAge` | 4 | Time since the last "I'm here" touch, in bands |
+| `battery` | 2 | Charge in quarters |
+| `mode` | 2 | Live · alert chain · automatic night watch · reply |
+
+<img src="docs/media/divider.svg" width="100%" alt="">
+
+## Decisions on record
+
+| ADR | Decision |
+|---|---|
+| 0001 | Native Swift 6 and SwiftUI on iOS |
+| 0002 | Signal v0: chirp preamble with CSS data |
+| 0003 | A layered beacon: the live signal plus a notification chain |
+| 0004 | Signal v1: band, error correction and payload layout |
+| 0005 | Android as a first-class twin with matching behaviour |
+
+CI runs the Python DSP tests that check the signal design and builds the Swift spikes and tools; a security review runs on every pull request.
+
+<img src="docs/media/divider.svg" width="100%" alt="">
+
 ## Türkçe özet
 
 **Ses Ver**, enkaz altındaki bir telefonu günlerce dayanacak akustik bir işarete çeviren ve kurtarıcının telefonuyla bu işareti dinleyip yön gösteren bir uygulama. Kurban tarafı tek hareketle başlıyor; sinyal kaç kişi olduğunu, yaralı olup olmadığını ve son dokunuş zamanını taşıyor. Kurtarıcı tarafı sıcak-soğuk haritası ve saat eşitlemesi gerektirmeyen iki yönlü mesafe ölçümüyle arama alanını daraltıyor. iOS (Swift) ve Android (Kotlin) sürümleri var. Saha verisi gelmeden hiçbir "hayat kurtarır" iddiası yapılmıyor.
@@ -84,5 +125,5 @@ cd android && ./gradlew test             # Android unit tests
 <div align="center">
 <br>
 <a href="https://github.com/kutluhangil"><img src="docs/media/signature.svg" width="100%" alt="Built by kutluhangil"></a>
-<sub>Built for the minutes that matter · not a substitute for a whistle or for emergency services.</sub>
+<sub>MIT licensed · built for the minutes that matter · not a substitute for a whistle or for emergency services · the beacon in the banner is an example.</sub>
 </div>
