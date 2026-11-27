@@ -15,7 +15,7 @@ struct DetectorKitTests {
         let bank = MatchedFilterBank(spec: .v1)
         let power = bank.correlatePower(input: signal)
 
-        #expect(power.count > 0)
+        #expect(!power.isEmpty)
         let maxPower = power.max() ?? 0
         #expect(maxPower > 10.0) // Eşlenik filtre kazancı ile tepe gücü belirgin
     }

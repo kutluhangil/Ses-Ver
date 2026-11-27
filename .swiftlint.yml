@@ -4,6 +4,9 @@ disabled_rules:
   - line_length
   - type_body_length
   - file_length
+  # Proje üslubu: çok satırlı listelerde sondaki virgül, AppIntent'lerde açık init()
+  - trailing_comma
+  - unneeded_synthesized_initializer
 
 opt_in_rules:
   - empty_count
@@ -18,6 +21,7 @@ included:
 
 excluded:
   - .build
+  - Packages/.build
   - DerivedData
   - research
   - Spikes/SesVerSpikes.xcodeproj
@@ -25,3 +29,16 @@ excluded:
 
 analyzer_rules:
   - unused_import
+
+# DSP ve test kodu için eşikler (--strict uyarıyı da hata sayar)
+nesting:
+  type_level: 3
+large_tuple:
+  warning: 4
+  error: 5
+cyclomatic_complexity:
+  warning: 20
+  error: 25
+function_body_length:
+  warning: 80
+  error: 120
